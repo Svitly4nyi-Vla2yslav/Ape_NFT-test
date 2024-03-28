@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { HeaderContainer, Logo } from './Header.styled';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
-import { Icon } from '../Icon';
-// import { ReactComponent as ApeLogo } from '../../assets/icons/logo.svg';
-
-// const ApeLogo = () => {
-//   return <img src="./logo.svg" alt="Ape Logo" />;
-// };
+import Icon from '../Icon/Icon';
 
 const Header: React.FC = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -20,26 +15,24 @@ const Header: React.FC = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   });
-
 
   return (
     <HeaderContainer $isScrolled={isScrolled}>
       <Logo>
-      <Icon
-              name="logo"
-              iconWidth={{ mobile: '16px', tablet: '16px' }}
-              stroke={'#e6533c'}
-            />
-        
+        <Icon
+          name="logo"
+          iconWidth={{ mobile: '16px', tablet: '16px' }}
+          stroke={'#fff'}
+        />
       </Logo>
-      <BurgerMenu/>
+      <BurgerMenu />
     </HeaderContainer>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

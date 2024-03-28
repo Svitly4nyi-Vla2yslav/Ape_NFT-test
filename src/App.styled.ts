@@ -16,8 +16,8 @@ const GlobalStyles = css`
 
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #040404;
-    color: #efedee;
+    // background-color: #040404;
+    // color: #efedee;
     scroll-behavior: smooth;
   }
 
