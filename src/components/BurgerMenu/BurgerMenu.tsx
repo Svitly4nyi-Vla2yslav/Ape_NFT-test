@@ -1,34 +1,40 @@
-import React from 'react';
-import { scaleRotate as Menu } from 'react-burger-menu';
-import {ContainerMenu, ContainerNetworks, Link, Wrapper } from './BurgerMenu.styled';
+import React, { useState } from 'react';
+
+import {
+  BurgerMenuButton,
+  ContainerMenu,
+  ContainerNetworks,
+  Link,
+  MenuItem,
+  Wrapper,
+} from './BurgerMenu.styled';
 import Icon from '../Icon/Icon';
 
+export interface BurgerMenuProps {
+  isOpen: boolean;
+}
+
 const BurgerMenu: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Wrapper>
-    <Menu right width={'320px'} customBurgerIcon={<img src="/src/assets/icons/MENU.svg"/>} >
-      <ContainerMenu>
-        <a id="home" className="menu-item" href="/">
-          ABOUT
-        </a>
-        <a id="about" className="menu-item" href="/mind-map">
-          MIND-MAP
-        </a>
-        <a id="contact" className="menu-item" href="/faq">
-          FAQ
-        </a>
-        <a id="contact" className="menu-item" href="/arts">
-          ARTS
-        </a>
-        <a id="contact" className="menu-item" href="/mint">
-          MINT
-        </a>
+      <BurgerMenuButton onClick={toggleMenu}> MENU </BurgerMenuButton>
+      <ContainerMenu isOpen={isOpen as BurgerMenuProps['isOpen']}>
+        <MenuItem id="about">ABOUT</MenuItem>
+        <MenuItem id="mind-map">MIND-MAP</MenuItem>
+        <MenuItem id="faq">FAQ</MenuItem>
+        <MenuItem id="arts">ARTS</MenuItem>
+        <MenuItem id="mint">MINT</MenuItem>
       </ContainerMenu>
       <ContainerNetworks>
-        <Link>a
-          {' '}
+        <Link>
+          a{' '}
           <Icon
-            name={''}
+            name={'logo'}
             iconWidth={{
               mobile: '',
               tablet: '',
@@ -38,7 +44,7 @@ const BurgerMenu: React.FC = () => {
         <Link>a</Link>
         <Link>a</Link>
       </ContainerNetworks>
-    </Menu></Wrapper>
+    </Wrapper>
   );
 };
 
