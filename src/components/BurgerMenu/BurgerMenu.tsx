@@ -24,11 +24,11 @@ const BurgerMenu: React.FC = () => {
     <Wrapper>
       <BurgerMenuButton onClick={toggleMenu}> MENU </BurgerMenuButton>
       <ContainerMenu isOpen={isOpen as BurgerMenuProps['isOpen']}>
-        <MenuItem id="about">ABOUT</MenuItem>
-        <MenuItem id="mind-map">MIND-MAP</MenuItem>
-        <MenuItem id="faq">FAQ</MenuItem>
-        <MenuItem id="arts">ARTS</MenuItem>
-        <MenuItem id="mint">MINT</MenuItem>
+       <button> <MenuItem id="about">ABOUT</MenuItem></button>
+       <button> <MenuItem id="mind-map">MIND-MAP</MenuItem></button>
+       <button> <MenuItem id="faq">FAQ</MenuItem></button>
+       <button><MenuItem id="arts">ARTS</MenuItem></button>
+       <button><MenuItem id="mint">MINT</MenuItem></button> 
       </ContainerMenu>
       <ContainerNetworks>
         <Link>

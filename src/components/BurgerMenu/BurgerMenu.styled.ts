@@ -6,11 +6,12 @@ export const ContainerMenu = styled.ul<BurgerMenuProps>`
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #f9f9f9;
+  // background-color: #f9f9f9;
   list-style: none;
   padding: 0;
   width: 100%;
   text-align: center;
+  background-color: black;
   flex-direction: column;
 `;
 
@@ -18,10 +19,11 @@ export const ContainerNetworks = styled.div`
 display: flex;
 flex-direction: column;
 align-content: flex-end;
-    flex-wrap: wrap;
+ flex-wrap: wrap;
 `;
 
 export const MenuItem = styled.li`
+
 padding: 10px 0;
 `;
 
@@ -39,10 +41,12 @@ width: 48px;
 height: 48px;
 color: red;
 text-decoration: none;
-  color: #333;
+color: #333;
+ 
 `;
 
 export const Wrapper = styled.div`
+
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
