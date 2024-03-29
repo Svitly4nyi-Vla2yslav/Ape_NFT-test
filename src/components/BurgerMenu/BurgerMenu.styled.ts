@@ -26,10 +26,12 @@ padding: 10px 0;
 `;
 
 export const BurgerMenuButton = styled.button`
-
+font-size: 12px;
 width: 48px;
 height: 48px;
 cursor: pointer;
+border-radius: 12px;
+background: #DC3B5A;
 `;
 
 export const Link = styled.a`
@@ -41,5 +43,8 @@ text-decoration: none;
 `;
 
 export const Wrapper = styled.div`
-position: relative;
-`
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: flex-end;
+`;

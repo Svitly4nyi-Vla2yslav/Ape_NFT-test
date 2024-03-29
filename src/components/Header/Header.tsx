@@ -24,11 +24,7 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer $isScrolled={isScrolled}>
       <Logo>
-        <Icon
-          name="logo"
-          iconWidth={{ mobile: '16px', tablet: '16px' }}
-          stroke={'#fff'}
-        />
+        😁
       </Logo>
       <BurgerMenu />
     </HeaderContainer>

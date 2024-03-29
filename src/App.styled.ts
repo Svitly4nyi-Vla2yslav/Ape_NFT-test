@@ -16,8 +16,8 @@ const GlobalStyles = css`
 
   body {
     font-family: 'Roboto', sans-serif;
-    // background-color: #040404;
-    // color: #efedee;
+    background-color: #040404;
+    color: #efedee;
     scroll-behavior: smooth;
   }
 
@@ -32,7 +32,7 @@ const GlobalStyles = css`
   h5,
   h6,
   p,
-  fieldset {
+ {
     margin: 0;
     padding: 0;
   }
