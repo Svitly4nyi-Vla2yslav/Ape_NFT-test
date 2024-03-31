@@ -15,6 +15,17 @@ export const ContainerMenu = styled.ul< {isOpen: boolean} >`
   align-items: center;
 `;
 
+export const Image = styled.img`
+width: 16px;
+backround-color: transparent;
+color: red;
+
+&:focus,
+&:hover {
+ fill: lightgray; 
+}
+`;
+
 export const ButtonMenu = styled.button`
     background-color: transparent;
     display: flex;
@@ -34,6 +45,8 @@ display: flex;
 flex-direction: column;
 align-content: flex-end;
  flex-wrap: wrap;
+ gap : 10px;
+ margin-top: 10px;
 `;
 
 export const MenuItem = styled.li`
@@ -56,19 +69,32 @@ background: rgba(30, 30, 30, 0.3);
 `;
 
 export const Link = styled.a`
+display: flex;
+font-size: 11px;
 width: 48px;
 height: 48px;
-color: red;
-text-decoration: none;
-color: #333;
+cursor: pointer;
+border-radius: 12px;
+border: none;
+border-radius: 8px;
+padding: 1px;
+backdrop-filter: blur(12px);
+background: rgba(30, 30, 30, 0.3);
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
  
+&:hover,
+&:focus{
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2); 
+}
+
 `;
 
 export const Wrapper = styled.div`
-
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-content: flex-end;
-
 `;

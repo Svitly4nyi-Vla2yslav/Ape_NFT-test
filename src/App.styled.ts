@@ -55,6 +55,19 @@ const GlobalStyles = css`
     box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2); 
   }
 
+  a {
+    cursor: pointer;
+    transition-duration: 300ms;
+  }
+ 
+
+  img {
+    cursor: pointer;
+    transition-duration: 300ms;
+  }
+
+
+
   h1,
   h2,
   h3,

@@ -5,12 +5,15 @@ import {
   ButtonMenu,
   ContainerMenu,
   ContainerNetworks,
+  Image,
   Link,
   MenuItem,
   TextButton,
   Wrapper,
 } from './BurgerMenu.styled';
-import Icon from '../Icon/Icon';
+import discord from "../../assets/icons/discord_logo.svg"
+import ship from "../../assets/icons/ship.svg"
+import x from "../../assets/icons/X.svg"
 
 export interface BurgerMenuProps {
   isOpen: boolean;
@@ -18,15 +21,12 @@ export interface BurgerMenuProps {
 }
 
 const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, toggleMenu }) => {
-
-
   return (
-    <Wrapper >
+    <Wrapper>
       <BurgerMenuButton onClick={toggleMenu}>
         <TextButton> {isOpen ? 'CLOSE' : 'MENU'}</TextButton>
       </BurgerMenuButton>
-      <ContainerMenu isOpen={isOpen} >
-      
+      <ContainerMenu isOpen={isOpen}>
         <ButtonMenu>
           <MenuItem id="about">ABOUT</MenuItem>
         </ButtonMenu>
@@ -44,9 +44,9 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, toggleMenu }) => {
         </ButtonMenu>
       </ContainerMenu>
       <ContainerNetworks>
-        <Link>a</Link>
-        <Link>a</Link>
-        <Link>a</Link>
+        <Link href='#'><Image src={discord} alt='📱' /></Link>
+        <Link href='#'><Image src={ship} alt='🚢'/></Link>
+        <Link href='#'><Image src={x} alt='✖️' /></Link>
       </ContainerNetworks>
     </Wrapper>
   );
