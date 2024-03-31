@@ -56,7 +56,7 @@ const th=eh`
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  // src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
