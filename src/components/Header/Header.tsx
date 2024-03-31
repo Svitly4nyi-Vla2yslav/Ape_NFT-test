@@ -1,32 +1,19 @@
-import React, { useEffect, useState } from 'react';
+
+import React, { useState } from 'react';
 import { HeaderContainer, Logo } from './Header.styled';
-import BurgerMenu from '../BurgerMenu/BurgerMenu';
-import Icon from '../Icon/Icon';
+import BurgerMenu, { BurgerMenuProps } from '../BurgerMenu/BurgerMenu'; 
 
 const Header: React.FC = () => {
-  const [isScrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  });
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <HeaderContainer $isScrolled={isScrolled}>
-      <Logo>
-        😁
-      </Logo>
-      <BurgerMenu />
+    <HeaderContainer isOpen={isOpen} toggleMenu={toggleMenu}>
+      <Logo>😁</Logo>
+    
+      <BurgerMenu isOpen={isOpen} toggleMenu={toggleMenu} />
     </HeaderContainer>
   );
 };
