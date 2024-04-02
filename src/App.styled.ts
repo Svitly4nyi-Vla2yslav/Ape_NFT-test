@@ -1,5 +1,9 @@
 import { css } from '@emotion/react';
-
+import Grotesk from "./assets/fonts/RightGrotesk-CompactBlack.ttf"
+import BiroScript from "./assets/fonts/BiroScriptPlus-Bold.ttf"
+import Messina from "./assets/fonts/MessinaSansMono-Black.ttf"
+import Formular from "./assets/fonts/Formular-Medium.ttf"
+import Roboto from "./assets/fonts/Roboto-Regular.ttf"
 //! src: url(${Roboto}) format('truetype');
 
 const GlobalStyles = css`
@@ -13,27 +17,27 @@ const GlobalStyles = css`
 }
 @font-face {
   font-family: 'Roboto';
-  // src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  // src: url(${Roboto}) format('truetype');
 }
 
 @font-face {
   font-family: 'Right Grotesk';
-  src: url('./assets/fonts/RightGrotesk-CompactBlack.ttf') format('truetype');
+  src: url(${Grotesk}) format('truetype');
 }
 
 @font-face {
   font-family: 'Messina Sans Mono';
-  src: url('./assets/fonts/MessinaSansMono-Black.ttf') format('truetype');
+  src: url(${Messina}) format('truetype');
 }
 
 @font-face {
   font-family: 'Biro Script Plus';
-  src: url('./assets/fonts/BiroScriptPlus-Bold.ttf') format('truetype');
+  src: url(${BiroScript}) format('truetype');
 }
 
 @font-face {
   font-family: 'Formular';
-  src: url('./assets/fonts/Formular-Medium.ttf') format('truetype');
+  src: url(${Formular}) format('truetype');
 }
 
 
@@ -51,8 +55,8 @@ const GlobalStyles = css`
   }
   button:focus,
   button:hover {
-    color: lightgray; 
-    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2); 
+    background-color: lightgray; 
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.6); 
   }
 
   a {
@@ -76,6 +80,7 @@ const GlobalStyles = css`
   h6,
   p,
  {
+  font-family: 'Messina Sans Mono';
     margin: 0;
     padding: 0;
   }

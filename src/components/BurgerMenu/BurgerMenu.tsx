@@ -16,17 +16,17 @@ import ship from "../../assets/icons/ship.svg"
 import x from "../../assets/icons/X.svg"
 
 export interface BurgerMenuProps {
-  isOpen: boolean;
-  toggleMenu: () => void;
+  isopen?: boolean ;
+  toggleMenu?: () => void;
 }
 
-const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, toggleMenu }) => {
+const BurgerMenu: React.FC<BurgerMenuProps> = ({ isopen, toggleMenu }) => {
   return (
     <Wrapper>
       <BurgerMenuButton onClick={toggleMenu}>
-        <TextButton> {isOpen ? 'CLOSE' : 'MENU'}</TextButton>
+        <TextButton> {isopen ? 'CLOSE' : 'MENU'}</TextButton>
       </BurgerMenuButton>
-      <ContainerMenu isOpen={isOpen}>
+      <ContainerMenu isopen={isopen}>
         <ButtonMenu>
           <MenuItem id="about">ABOUT</MenuItem>
         </ButtonMenu>

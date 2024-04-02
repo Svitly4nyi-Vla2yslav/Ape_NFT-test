@@ -1,19 +1,21 @@
-
 import React, { useState } from 'react';
-import { HeaderContainer, Logo } from './Header.styled';
-import BurgerMenu, { BurgerMenuProps } from '../BurgerMenu/BurgerMenu'; 
-
+import { HeaderContainer, Logo, LogoIcon } from './Header.styled';
+import BurgerMenu, { BurgerMenuProps } from '../BurgerMenu/BurgerMenu';
+import logo from '../../assets/icons/logo.svg';
+import Hero from '../Hero/Hero';
 const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isopen, setIsOpen] = useState(false);
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isopen);
   };
 
   return (
-    <HeaderContainer isOpen={isOpen} toggleMenu={toggleMenu}>
-      <Logo>😁</Logo>
-    
-      <BurgerMenu isOpen={isOpen} toggleMenu={toggleMenu} />
+    <HeaderContainer isopen={isopen} >
+      <Logo>
+        <LogoIcon src={logo} alt="Logo" />
+      </Logo>
+      <Hero isopen={isopen}  />
+      <BurgerMenu isopen={isopen} toggleMenu={toggleMenu} />
     </HeaderContainer>
   );
 };

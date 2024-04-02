@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-export const ContainerMenu = styled.ul< {isOpen: boolean} >`
-  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+export const ContainerMenu = styled.ul< {isopen: boolean} >`
+  display: ${({ isopen }) => (isopen ? 'flex' : 'none')};
   position: absolute;
   top: 35%;
   left: 0;
@@ -18,11 +18,11 @@ export const ContainerMenu = styled.ul< {isOpen: boolean} >`
 export const Image = styled.img`
 width: 16px;
 backround-color: transparent;
-color: red;
+
 
 &:focus,
 &:hover {
- fill: lightgray; 
+ backround-color: lightgray; 
 }
 `;
 
@@ -87,7 +87,9 @@ align-items: center;
  
 &:hover,
 &:focus{
-  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
+  border: 1px solid lightgray;    
+  background: lightgray;
 }
 
 `;
