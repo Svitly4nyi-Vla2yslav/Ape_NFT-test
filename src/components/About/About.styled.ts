@@ -7,7 +7,7 @@ export const marqueeAnimation = keyframes`
     transform: translateX(1%);
   }
   to {
-    transform: translateX(-400%);
+    transform: translateX(-900%);
   }
 `;
 
@@ -84,7 +84,7 @@ export const MarqueeText = styled.div`
 font-family: 'Right Grotesk';
 padding: 6px 0px 8px 0px;
   white-space: nowrap;
-  animation: ${marqueeAnimation} 20s linear infinite; 
+  animation: ${marqueeAnimation} 50s linear infinite; 
   margin: 0;
   font-weight: 900;
 font-size: 36px;
