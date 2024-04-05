@@ -15,7 +15,7 @@ import AboutImage from "../../assets/image/aboutImage.png"
 const About: React.FC = () => {
   return (
     <>
-      <AboutContainer>
+      <AboutContainer id='about'>
         <AboutTitle>
           a Story that started with <SpanTitle>one simple ape</SpanTitle>
         </AboutTitle>

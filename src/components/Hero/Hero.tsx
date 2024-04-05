@@ -17,9 +17,8 @@ const Hero: React.FC<BurgerMenuProps> = ({ isopen }) => {
       <TextGroteskTitle>YACHT APES</TextGroteskTitle>
       <TextBuroScript>Apes aRe eveRywhere</TextBuroScript>
       <HeroImage src={heroImage} alt="Hero Apes" />
-      <ButtonMeetApes>
-
-        <TextGrotesk>MEET APES</TextGrotesk>
+      <ButtonMeetApes><a href="#mind-map" target='_self'>
+        <TextGrotesk>MEET APES</TextGrotesk></a>
       </ButtonMeetApes>
       <TextMessina>
         Yacht Ape is a collection of unique digital apes that you can own in NFT

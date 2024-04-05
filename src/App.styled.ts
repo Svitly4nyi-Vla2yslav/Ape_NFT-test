@@ -62,6 +62,8 @@ const GlobalStyles = css`
   a {
     cursor: pointer;
     transition-duration: 300ms;
+    text-decoration: none;
+    color: #FFFFFF;
   }
  
 
@@ -98,6 +100,10 @@ const GlobalStyles = css`
     height: 100%;
   }
 
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    }
 
 `;
 

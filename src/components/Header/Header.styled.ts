@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-// import { BurgerMenuProps } from '../BurgerMenu/BurgerMenu';
+import { ContainerProps } from './Header';
 
-export const HeaderContainer = styled.div<{isopen: boolean}>`
+export const HeaderContainer = styled.div<{ isopen: boolean }>`
 transition-duration: 300ms;
 
   display: flex;
@@ -15,14 +15,22 @@ transition-duration: 300ms;
     height: 542px;
 
 
-`
+`;
+
+export const Container = styled.div<ContainerProps>`
+transition-duration: 150ms;
+background-color: ${({ $isScrolled }) =>
+    $isScrolled ? "transparent" : "transparent"};
+`;
 
 export const Logo = styled.a`
 width: 48px;
 height: 32px;
 `
 export const LogoIcon = styled.img`
-
+position: fixed;
+    width: 48px;
+    height: 32px;
 `;
 
 

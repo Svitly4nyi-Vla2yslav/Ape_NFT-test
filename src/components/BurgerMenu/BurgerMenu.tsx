@@ -28,10 +28,10 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isopen, toggleMenu }) => {
       </BurgerMenuButton>
       <ContainerMenu isopen={isopen}>
         <ButtonMenu>
-          <MenuItem id="about">ABOUT</MenuItem>
+          <MenuItem><a href="#about" target='_self'>ABOUT</a> </MenuItem>
         </ButtonMenu>
         <ButtonMenu>
-          <MenuItem id="mind-map">MIND-MAP</MenuItem>
+          <MenuItem ><a href="#mind-map" target='_self'>MIND-MAP</a> </MenuItem>
         </ButtonMenu>
         <ButtonMenu>
           <MenuItem id="faq">FAQ</MenuItem>

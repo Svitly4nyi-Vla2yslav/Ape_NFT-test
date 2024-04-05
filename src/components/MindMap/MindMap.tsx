@@ -2,7 +2,7 @@ import React from 'react'
 
 const MindMap: React.FC = () => {
   return (
-    <div>MindMap</div>
+    <div id='mind-map'>MindMap</div>
   )
 }
 
