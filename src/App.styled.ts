@@ -5,6 +5,7 @@ import Messina from "./assets/fonts/MessinaSansMono-Black.ttf"
 import Formular from "./assets/fonts/Formular-Medium.ttf"
 import Roboto from "./assets/fonts/Roboto-Regular.ttf"
 //! src: url(${Roboto}) format('truetype');
+import styled from 'styled-components';
 
 const GlobalStyles = css`
 
@@ -55,7 +56,7 @@ const GlobalStyles = css`
   }
   button:focus,
   button:hover {
-    background-color: lightgray; 
+    // background-color: lightgray; 
     box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.6); 
   }
 
@@ -105,6 +106,29 @@ const GlobalStyles = css`
     scroll-behavior: smooth;
     }
 
+`;
+
+export const GlobalContainer = styled.div`
+width: 100%;
+// padding: 0 15px; /* Загальні відступи для всіх розмірів екрану */
+
+// /* Респонсивні стилі */
+// @media screen and (min-width: 576px) {
+//   max-width: 540px; /* Ширина контейнера для пристроїв з екранами ширше 576px */
+//   margin: 0 auto; /* Центрування контейнера на більших екранах */
+// }
+
+// @media screen and (min-width: 768px) {
+//   max-width: 720px; /* Ширина контейнера для пристроїв з екранами ширше 768px */
+// }
+
+// @media screen and (min-width: 992px) {
+//   max-width: 960px; /* Ширина контейнера для пристроїв з екранами ширше 992px */
+// }
+
+// @media screen and (min-width: 1200px) {
+//   max-width: 1140px; /* Ширина контейнера для пристроїв з екранами ширше 1200px */
+// }
 `;
 
 export default GlobalStyles;

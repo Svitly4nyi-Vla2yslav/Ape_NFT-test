@@ -13,7 +13,7 @@ export const marqueeAnimation = keyframes`
 
 export const AboutContainer = styled.div`
 width: 216px;
-margin: 60px 72px 1px 72px;
+margin: 60px auto 1px auto;
 `;
 
 export const AboutTitle = styled.h2`
@@ -84,7 +84,7 @@ export const MarqueeText = styled.div`
 font-family: 'Right Grotesk';
 padding: 6px 0px 8px 0px;
   white-space: nowrap;
-  animation: ${marqueeAnimation} 50s linear infinite; 
+  animation: ${marqueeAnimation} 120s infinite; 
   margin: 0;
   font-weight: 900;
 font-size: 36px;

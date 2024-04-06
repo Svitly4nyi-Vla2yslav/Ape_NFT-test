@@ -1,9 +1,50 @@
-import React from 'react'
+import React from 'react';
+import { Slider } from './Slider';
+import {
+  CardItem,
+  IconArrow,
+  MindContainer,
+  TextMessinaMap,
+  TitleMap,
+} from './MindMap.styled';
+import Arrow from '../../assets/icons/arrow.svg';
 
 const MindMap: React.FC = () => {
   return (
-    <div id='mind-map'>MindMap</div>
-  )
-}
+    <MindContainer id="mind-map">
+      <Slider>
+        <CardItem>
+          <TextMessinaMap>
+            All owners of APE NFTs and all future collections will receive a
+            percentage of sales based on the number of NFTs they own
+          </TextMessinaMap>
+          <TitleMap>YAPE DROP</TitleMap>
+        </CardItem>
+        <CardItem>
+          <TextMessinaMap>
+            Launch of the 2nd YACHT Collection Releasing the first version of
+            the Ape Slam Game
+          </TextMessinaMap>
+          <TitleMap>New Collection</TitleMap>
+        </CardItem>
+        <CardItem>
+          <TextMessinaMap>
+            Launch your own token, the proceeds of which will go to a global
+            fund to LAUNCH YACHT CLUB AND PROMOTE it
+          </TextMessinaMap>
+          <TitleMap>Token</TitleMap>
+        </CardItem>
+        <CardItem style={{ background: '#dc3b5a' }}>
+          <TextMessinaMap>
+            <a href="https://www.linkedin.com/in/vladyslav-svitlychnyi/">
+              <IconArrow src={Arrow} alt="↗️" />
+            </a>
+          </TextMessinaMap>
+          <TitleMap>Learn more in mind map</TitleMap>
+        </CardItem>
+      </Slider>
+    </MindContainer>
+  );
+};
 
-export default MindMap
+export default MindMap;

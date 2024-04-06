@@ -20,7 +20,7 @@ transition-duration: 300ms;
 export const Container = styled.div<ContainerProps>`
 transition-duration: 150ms;
 background-color: ${({ $isScrolled }) =>
-    $isScrolled ? "transparent" : "transparent"};
+        $isScrolled ? "transparent" : "transparent"};
 `;
 
 export const Logo = styled.a`
@@ -31,6 +31,8 @@ export const LogoIcon = styled.img`
 position: fixed;
     width: 48px;
     height: 32px;
+
+   
 `;
 
 
