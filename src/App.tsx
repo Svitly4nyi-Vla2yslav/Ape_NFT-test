@@ -4,6 +4,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import MindMap from './components/MindMap/MindMap';
+import FAQ from './components/FAQ/FAQ';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Header/>
       <About/>
       <MindMap/>
+      <FAQ/>
     </GlobalContainer>
   )
 }
