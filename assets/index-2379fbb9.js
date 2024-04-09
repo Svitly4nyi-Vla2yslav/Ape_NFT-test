@@ -276,7 +276,7 @@ display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-content: flex-end;
-`,Dw="/assets/discord_logo-eac0030e.svg",Hw="/assets/ship-30475caa.svg",Bw="/assets/X-9219ad6d.svg",Uw=({isopen:e,toggleMenu:t})=>T.jsxs(Fw,{children:[T.jsx(zw,{onClick:t,children:T.jsxs(Lw,{children:[" ",e?"CLOSE":"MENU"]})}),T.jsxs(Nw,{isopen:e,children:[T.jsx(Co,{children:T.jsxs(ko,{children:[T.jsx("a",{href:"#about",target:"_self",children:"ABOUT"})," "]})}),T.jsx(Co,{children:T.jsxs(ko,{children:[T.jsx("a",{href:"#mind-map",target:"_self",children:"MIND-MAP"})," "]})}),T.jsx(Co,{children:T.jsx(ko,{id:"faq",children:"FAQ"})}),T.jsx(Co,{children:T.jsx(ko,{id:"arts",children:"ARTS"})}),T.jsx(Co,{children:T.jsx(ko,{id:"mint",children:"MINT"})})]}),T.jsxs(jw,{children:[T.jsx(Hs,{href:"#",children:T.jsx(Ds,{src:Dw,alt:"📱"})}),T.jsx(Hs,{href:"#",children:T.jsx(Ds,{src:Hw,alt:"🚢"})}),T.jsx(Hs,{href:"#",children:T.jsx(Ds,{src:Bw,alt:"✖️"})})]})]}),Vw="/assets/logo-ee82785b.svg",Ww=Q.div`
+`,Dw="/assets/discord_logo-eac0030e.svg",Hw="/assets/ship-30475caa.svg",Bw="/assets/X-9219ad6d.svg",Uw=({isopen:e,toggleMenu:t})=>T.jsxs(Fw,{children:[T.jsx(zw,{onClick:t,children:T.jsxs(Lw,{children:[" ",e?"CLOSE":"MENU"]})}),T.jsxs(Nw,{isopen:e,children:[T.jsx(Co,{children:T.jsxs(ko,{children:[T.jsx("a",{href:"#about",target:"_self",children:"ABOUT"})," "]})}),T.jsx(Co,{children:T.jsxs(ko,{children:[T.jsx("a",{href:"#mind-map",target:"_self",children:"MIND-MAP"})," "]})}),T.jsx(Co,{children:T.jsxs(ko,{children:[T.jsx("a",{href:"#faq",target:"_self",children:"FAQ"})," "]})}),T.jsx(Co,{children:T.jsx(ko,{children:"ARTS"})}),T.jsx(Co,{children:T.jsx(ko,{id:"mint",children:"MINT"})})]}),T.jsxs(jw,{children:[T.jsx(Hs,{href:"#",children:T.jsx(Ds,{src:Dw,alt:"📱"})}),T.jsx(Hs,{href:"#",children:T.jsx(Ds,{src:Hw,alt:"🚢"})}),T.jsx(Hs,{href:"#",children:T.jsx(Ds,{src:Bw,alt:"✖️"})})]})]}),Vw="/assets/logo-ee82785b.svg",Ww=Q.div`
 display: ${({isopen:e})=>e?"none":"flex"};
     flex-direction: column;
     align-items: center;
@@ -652,18 +652,22 @@ transition-duration: 300ms;
     padding: 8px;
     width: 65%;
 
-:where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child {
- 
-    border-radius: 12px;
-}
+
 &:active{
     border-radius: 12px;
-    background: #1e1e1e;
-    
-    
+    background: #1e1e1e;  
+}
+
+:where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child {
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+&:active{
+    border-radius: 12px;
+    background: #1e1e1e;  
 }
 margin-bottom: 60px;
-
 `,na=Q.ul`
 width: 100%;
 display: flex;
@@ -715,7 +719,7 @@ line-height: 1.66667;
 color: #dc3b5a;
 padding: 8px 8px 8px 0;
 
-&:target,
+&:hover,
 &:active{
     color: #fff;
     // background: #1e1e1e;
@@ -723,4 +727,4 @@ padding: 8px 8px 8px 0;
 }
 `;Q.span`
 
-`;const Tb=e=>[{key:"1",label:T.jsxs(na,{children:[T.jsx(ia,{children:"[ 1 ]"}),T.jsx(ra,{children:"WHAT IS AN NFT COLLECTION?"})]}),children:T.jsx(oa,{children:"An NFT collection is a group of unique digital assets, each represented by a non-fungible token, typically created around a specific theme or style."}),showArrow:!1,style:e},{key:"2",label:T.jsxs(na,{children:[T.jsx(ia,{children:"[ 2 ]"}),T.jsx(ra,{children:"HOW DO I PURCHASE NFTS FROM A COLLECTION?"})]}),children:T.jsx(oa,{children:"To purchase nfts from a collection, you typically need to use cryptocurrency on a blockchain0based marketplace."}),showArrow:!1,style:e},{key:"3",label:T.jsxs(na,{children:[" ",T.jsx(ia,{children:"[ 3 ]"}),T.jsx(ra,{children:"CAN I SELL OR TRADE NFTS FROM A COLLECTION?"})]}),children:T.jsxs(oa,{children:["To purchase nfts from a collection, you typically need to use cryptocurrency on a blockchain0based marketplace."," "]}),showArrow:!1,style:e},{key:"4",label:T.jsxs(na,{children:[" ",T.jsx(ia,{children:" [ 4 ] "}),T.jsx(ra,{children:"WHAT RIGHTS DO I HAVE AS AN OWNER OF AN NFT?"})]}),children:T.jsx(oa,{children:"As an NFT owner, you can own, transfer, potentially access exclusive content, resell, but don't automatically get copyright or intellectual property rights."}),showArrow:!1,style:e}],Pb=()=>{const e=n=>{console.log(n)},t={border:"none"};return T.jsxs(Eb,{children:[T.jsx(bb,{children:"FAQ"}),T.jsx(kb,{accordion:!0,ghost:!0,defaultActiveKey:["1"],bordered:!1,onChange:e,items:Tb(t)})]})},$b=()=>T.jsxs(bw,{children:[T.jsx(mx,{styles:Ew}),T.jsx(Jw,{}),T.jsx(fC,{}),T.jsx(CC,{}),T.jsx(Pb,{})]});nu.createRoot(document.getElementById("root")).render(T.jsx($b,{}));
+`;const Tb=e=>[{key:"1",label:T.jsxs(na,{children:[T.jsx(ia,{children:"[ 1 ]"}),T.jsx(ra,{children:"WHAT IS AN NFT COLLECTION?"})]}),children:T.jsx(oa,{children:"An NFT collection is a group of unique digital assets, each represented by a non-fungible token, typically created around a specific theme or style."}),showArrow:!1,style:e},{key:"2",label:T.jsxs(na,{children:[T.jsx(ia,{children:"[ 2 ]"}),T.jsx(ra,{children:"HOW DO I PURCHASE NFTS FROM A COLLECTION?"})]}),children:T.jsx(oa,{children:"To purchase nfts from a collection, you typically need to use cryptocurrency on a blockchain0based marketplace."}),showArrow:!1,style:e},{key:"3",label:T.jsxs(na,{children:[" ",T.jsx(ia,{children:"[ 3 ]"}),T.jsx(ra,{children:"CAN I SELL OR TRADE NFTS FROM A COLLECTION?"})]}),children:T.jsxs(oa,{children:["To purchase nfts from a collection, you typically need to use cryptocurrency on a blockchain0based marketplace."," "]}),showArrow:!1,style:e},{key:"4",label:T.jsxs(na,{children:[" ",T.jsx(ia,{children:" [ 4 ] "}),T.jsx(ra,{children:"WHAT RIGHTS DO I HAVE AS AN OWNER OF AN NFT?"})]}),children:T.jsx(oa,{children:"As an NFT owner, you can own, transfer, potentially access exclusive content, resell, but don't automatically get copyright or intellectual property rights."}),showArrow:!1,style:e}],Pb=()=>{const e=n=>{console.log(n)},t={border:"none"};return T.jsxs(Eb,{children:[T.jsx(bb,{id:"faq",children:"FAQ"}),T.jsx(kb,{accordion:!0,ghost:!0,defaultActiveKey:["1"],bordered:!1,onChange:e,items:Tb(t)})]})},$b=()=>T.jsxs(bw,{children:[T.jsx(mx,{styles:Ew}),T.jsx(Jw,{}),T.jsx(fC,{}),T.jsx(CC,{}),T.jsx(Pb,{})]});nu.createRoot(document.getElementById("root")).render(T.jsx($b,{}));
