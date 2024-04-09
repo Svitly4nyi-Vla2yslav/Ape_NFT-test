@@ -25,6 +25,18 @@ transition-duration: 300ms;
     border-radius: 12px;
 }
 
+:where(.css-1kuana8).ant-collapse-ghost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bikQaF .ant-collapse-item-active {
+    border-radius: 12px;
+    background: rgb(30, 30, 30);
+    padding: 8px;
+    width: 65%;
+
 :where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child {
  
     border-radius: 12px;
