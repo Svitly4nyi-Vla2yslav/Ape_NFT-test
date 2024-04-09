@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerColection = styled.div`
 :where(.css-dev-only-do-not-override-1kuana8).ant-collapse>.ant-collapse-item {
-    border-bottom: none !important;
+    border: none !important;
     // width: 100%;
    width: 65%;
 
@@ -36,6 +36,8 @@ transition-duration: 300ms;
 export const TitleList = styled.ul`
 width: 100%;
 display: flex;
+
+
 `;
 
 export const Title = styled.h2`
@@ -45,6 +47,9 @@ font-size: 44px;
 line-height: 0.90909;
 text-transform: uppercase;
 color: #fff;
+text-align: center;
+padding-top: 60px;
+padding-bottom: 24px;
 `;
 
 export const TitleItem = styled.li`
@@ -96,6 +101,8 @@ padding: 8px 8px 8px 0;
 
 }
 `
+
+
 
 export const NumberTitleText = styled.span`
 

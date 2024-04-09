@@ -5,7 +5,7 @@ import {
   ContainerColection,
   ItemText,
   NumberTitle,
-  // Title,
+  Title,
   TitleItem,
   TitleList,
 } from './FAQ.styled';
@@ -29,6 +29,7 @@ const getItems: (
       </ItemText>
     ),
     showArrow: false,
+    style: panelStyle,
   },
   {
     key: '2',
@@ -45,6 +46,7 @@ const getItems: (
       </ItemText>
     ),
     showArrow: false,
+    style: panelStyle,
   },
   {
     key: '3',
@@ -62,6 +64,7 @@ const getItems: (
       </ItemText>
     ),
     showArrow: false,
+    style: panelStyle,
   },
   {
     key: '4',
@@ -80,11 +83,12 @@ const getItems: (
       </ItemText>
     ),
     showArrow: false,
+    style: panelStyle,
   },
 ];
 
 const FAQ: React.FC = () => {
-  const { token } = theme.useToken();
+  // const { token } = theme.useToken();
 
   const onChange = (key: string | string[]) => {
     console.log(key);
@@ -92,14 +96,16 @@ const FAQ: React.FC = () => {
 
   const panelStyle: React.CSSProperties = {
     // marginBottom: 24,
-    background: token.colorFillAlter,
-    borderRadius: token.borderRadiusLG,
+    // background: token.colorFillAlter,
+    // borderRadius: token.borderRadiusLG,
     border: 'none',
   };
   return (
     <ContainerColection>
+      <Title>FAQ</Title>
       <Collapse
         accordion
+        ghost
         defaultActiveKey={['1']}
         bordered={false}
         onChange={onChange}
