@@ -24,12 +24,18 @@ transition-duration: 300ms;
    
     border-radius: 12px;
 }
+
+:where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child {
+ 
+    border-radius: 12px;
+}
 &:active{
     border-radius: 12px;
     background: #1e1e1e;
     
     
 }
+margin-bottom: 60px;
 
 `;
 
