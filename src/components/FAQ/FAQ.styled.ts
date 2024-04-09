@@ -48,6 +48,10 @@ transition-duration: 300ms;
     margin-bottom: 60px;
 }
 
+:where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child, :where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child .ant-collapse-header {
+    border-radius: 12px;
+}
+
 &:active{
     border-radius: 12px;
     background: #1e1e1e;  

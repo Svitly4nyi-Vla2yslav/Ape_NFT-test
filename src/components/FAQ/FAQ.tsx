@@ -88,20 +88,18 @@ const getItems: (
 ];
 
 const FAQ: React.FC = () => {
-  // const { token } = theme.useToken();
 
   const onChange = (key: string | string[]) => {
     console.log(key);
   };
 
   const panelStyle: React.CSSProperties = {
-    // marginBottom: 24,
-    // background: token.colorFillAlter,
-    // borderRadius: token.borderRadiusLG,
+ 
     border: 'none',
+    borderRadius: "12px"
   };
   return (
-    <ContainerColection>
+    <ContainerColection style={{marginBottom: "60px"}}>
       <Title id='faq'>FAQ</Title>
       <Collapse
         accordion
@@ -112,44 +110,6 @@ const FAQ: React.FC = () => {
         items={getItems(panelStyle)}
       />
     </ContainerColection>
-    // <ContainerColection>
-    //   <Title>FAQ</Title>
-    //   <TitleList>
-    //     <TitleItem>
-    //       <NumberTitle>[ 1 ]</NumberTitle>WHAT IS AN NFT COLLECTION?
-    //       <ItemText>
-    //         An NFT collection is a group of unique digital assets, each
-    //         represented by a non-fungible token, typically created around a
-    //         specific theme or style.
-    //       </ItemText>
-    //     </TitleItem>
-    //     <TitleItem>
-    //       <NumberTitle>[ 2 ]</NumberTitle> HOW DO I PURCHASE NFTS FROM A
-    //       COLLECTION?
-    //       <ItemText>
-    //         To purchase nfts from a collection, you typically need to use
-    //         cryptocurrency on a blockchain0based marketplace.{' '}
-    //       </ItemText>
-    //     </TitleItem>
-    //     <TitleItem>
-    //       <NumberTitle>[ 3 ]</NumberTitle>
-    //       CAN I SELL OR TRADE NFTS FROM A COLLECTION?
-    //       <ItemText>
-    //         To purchase nfts from a collection, you typically need to use
-    //         cryptocurrency on a blockchain0based marketplace.{' '}
-    //       </ItemText>
-    //     </TitleItem>
-    //     <TitleItem>
-    //       <NumberTitle>[ 4 ]</NumberTitle>
-    //       WHAT RIGHTS DO I HAVE AS AN OWNER OF AN NFT?
-    //       <ItemText>
-    //         As an NFT owner, you can own, transfer, potentially access exclusive
-    //         content, resell, but don't automatically get copyright or
-    //         intellectual property rights.
-    //       </ItemText>
-    //     </TitleItem>
-    //   </TitleList>
-    // </ContainerColection>
   );
 };
 
