@@ -14,6 +14,7 @@ import {
 import discord from "../../assets/icons/discord_logo.svg"
 import ship from "../../assets/icons/ship.svg"
 import x from "../../assets/icons/X.svg"
+import FAQ from '../FAQ/FAQ';
 
 export interface BurgerMenuProps {
   isopen?: boolean ;
@@ -34,10 +35,10 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isopen, toggleMenu }) => {
           <MenuItem ><a href="#mind-map" target='_self'>MIND-MAP</a> </MenuItem>
         </ButtonMenu>
         <ButtonMenu>
-          <MenuItem id="faq">FAQ</MenuItem>
+          <MenuItem><a href="#faq" target='_self'>FAQ</a> </MenuItem>
         </ButtonMenu>
         <ButtonMenu>
-          <MenuItem id="arts">ARTS</MenuItem>
+          <MenuItem>ARTS</MenuItem>
         </ButtonMenu>
         <ButtonMenu>
           <MenuItem id="mint">MINT</MenuItem>

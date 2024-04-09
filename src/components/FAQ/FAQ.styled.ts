@@ -37,18 +37,22 @@ transition-duration: 300ms;
     padding: 8px;
     width: 65%;
 
-:where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child {
- 
-    border-radius: 12px;
-}
+
 &:active{
     border-radius: 12px;
-    background: #1e1e1e;
-    
-    
+    background: #1e1e1e;  
+}
+
+:where(.css-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child {
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+&:active{
+    border-radius: 12px;
+    background: #1e1e1e;  
 }
 margin-bottom: 60px;
-
 `;
 
 export const TitleList = styled.ul`
@@ -112,7 +116,7 @@ line-height: 1.66667;
 color: #dc3b5a;
 padding: 8px 8px 8px 0;
 
-&:target,
+&:hover,
 &:active{
     color: #fff;
     // background: #1e1e1e;

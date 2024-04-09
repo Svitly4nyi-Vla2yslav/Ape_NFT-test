@@ -102,7 +102,7 @@ const FAQ: React.FC = () => {
   };
   return (
     <ContainerColection>
-      <Title>FAQ</Title>
+      <Title id='faq'>FAQ</Title>
       <Collapse
         accordion
         ghost
