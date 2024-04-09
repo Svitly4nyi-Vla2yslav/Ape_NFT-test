@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerColection = styled.div`
 :where(.css-dev-only-do-not-override-1kuana8).ant-collapse>.ant-collapse-item {
-    border-bottom: none;
+    border-bottom: none !important;
     // width: 100%;
    width: 65%;
 

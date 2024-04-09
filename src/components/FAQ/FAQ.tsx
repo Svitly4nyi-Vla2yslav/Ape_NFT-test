@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import type { CollapseProps } from 'antd';
-import { Collapse } from 'antd';
+import { Collapse, theme } from 'antd';
 import {
   ContainerColection,
   ItemText,
   NumberTitle,
-  Title,
+  // Title,
   TitleItem,
   TitleList,
 } from './FAQ.styled';
 
-const items: CollapseProps['items'] = [
+const getItems: (
+  panelStyle: CSSProperties
+) => CollapseProps['items'] = panelStyle => [
   {
     key: '1',
     label: (
@@ -82,8 +84,17 @@ const items: CollapseProps['items'] = [
 ];
 
 const FAQ: React.FC = () => {
+  const { token } = theme.useToken();
+
   const onChange = (key: string | string[]) => {
     console.log(key);
+  };
+
+  const panelStyle: React.CSSProperties = {
+    // marginBottom: 24,
+    background: token.colorFillAlter,
+    borderRadius: token.borderRadiusLG,
+    border: 'none',
   };
   return (
     <ContainerColection>
@@ -92,7 +103,7 @@ const FAQ: React.FC = () => {
         defaultActiveKey={['1']}
         bordered={false}
         onChange={onChange}
-        items={items}
+        items={getItems(panelStyle)}
       />
     </ContainerColection>
     // <ContainerColection>
