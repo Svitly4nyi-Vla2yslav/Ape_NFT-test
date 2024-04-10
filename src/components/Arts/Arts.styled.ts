@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Title } from '../FAQ/FAQ.styled';
 
 export const ArtsContainer = styled.div`
 :where(.css-dev-only-do-not-override-1kuana8).ant-btn-default {
