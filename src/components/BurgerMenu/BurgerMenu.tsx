@@ -38,10 +38,10 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isopen, toggleMenu }) => {
           <MenuItem><a href="#faq" target='_self'>FAQ</a> </MenuItem>
         </ButtonMenu>
         <ButtonMenu>
-          <MenuItem>ARTS</MenuItem>
+          <MenuItem><a href="#arts" target='_self'>ARTS</a> </MenuItem>
         </ButtonMenu>
         <ButtonMenu>
-          <MenuItem id="mint">MINT</MenuItem>
+          <MenuItem><a href="#mint" target='_self'>MINT</a> </MenuItem>
         </ButtonMenu>
       </ContainerMenu>
       <ContainerNetworks>
