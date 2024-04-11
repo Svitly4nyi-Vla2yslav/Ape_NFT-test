@@ -57,7 +57,7 @@ const GlobalStyles = css`
   button:focus,
   button:hover {
     // background-color: lightgray; 
-    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.6); 
+    // box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.6); 
   }
 
   a {
