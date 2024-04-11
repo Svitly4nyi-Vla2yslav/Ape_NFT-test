@@ -13,6 +13,25 @@ export const ArtsContainer = styled.div`
     background: transparent;
     color: #dc3b5a;
 }
+
+:where(.css-1kuana8).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #dc3b5a;
+    border-color: transparent;
+    background: none;
+}
+
+:where(.css-1kuana8).ant-btn-default:not(:disabled):not(.ant-btn-disabled):active {
+    color: #dc3b5a;
+    border-color: transparent;
+    background: none;
+}
+
+:where(.css-1kuana8).ant-btn-default {
+    background: none;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.88);
+    box-shadow: 0 0px 0 rgba(0, 0, 0, 0.00);
+}
 margin-bottom: 60px;
 `;
 
