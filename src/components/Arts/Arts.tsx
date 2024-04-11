@@ -65,7 +65,7 @@ const Arts: React.FC = () => {
         draggable
         dots={false}
         infinite={false}
-        style={{ marginLeft: '22%' }}
+        style={{ marginLeft: '22%', background: "none", borderColor: "transparent" }}
       >
         <ImageItem>
           <ImageCard src={Image1} alt="Image 1" />
