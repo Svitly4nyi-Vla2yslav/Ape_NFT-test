@@ -5,6 +5,7 @@ import {
   IconX,
   TitleContact,
 } from './ContactUs.styled';
+import { ContactForm } from './ContactForm';
 
 const ContactUs: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const ContactUs: React.FC = () => {
         Join the YACHT APE community to be one of the first to receive our
         limited edition NFT
       </ContactText>
+      <ContactForm/>
     </ContactContainer>
   );
 };
