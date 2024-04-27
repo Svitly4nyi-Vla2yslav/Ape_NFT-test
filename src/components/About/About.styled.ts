@@ -84,7 +84,7 @@ export const MarqueeText = styled.div`
 font-family: 'Right Grotesk';
 padding: 6px 0px 8px 0px;
   white-space: nowrap;
-  animation: ${marqueeAnimation} 120s infinite; 
+ animation: ${marqueeAnimation} 120s linear infinite; 
   margin: 0;
   font-weight: 900;
 font-size: 36px;
