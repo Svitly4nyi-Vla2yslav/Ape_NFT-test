@@ -837,13 +837,14 @@ border-radius: 0 8px 8px 0;
 padding: 22px 24px;
 background: #000000;
 width: 168px;
-
+color:  #fff;
 `,IL=Z.input`
 border: 1px solid #1e1e1e;
 border-radius: 0 8px 8px 0;
 padding: 22px 24px;
 background: #000000;
 width: 168px;
+color:  #fff;
 `;Z.svg`
 
 `;const $L=Z.button`
