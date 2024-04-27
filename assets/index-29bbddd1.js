@@ -388,7 +388,7 @@ padding-top: 40px;
 font-family: 'Right Grotesk';
 padding: 6px 0px 8px 0px;
   white-space: nowrap;
-  animation: ${IP} 120s infinite; 
+ animation: ${IP} 120s linear infinite; 
   margin: 0;
   font-weight: 900;
 font-size: 36px;
