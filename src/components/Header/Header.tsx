@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, HeaderContainer, Logo, LogoIcon } from './Header.styled';
 import BurgerMenu, { BurgerMenuProps } from '../BurgerMenu/BurgerMenu';
-import logo from '../../assets/icons/logo.svg';
+import logo from '../../assets/icons/logo-ape.svg';
 import Hero from '../Hero/Hero';
 
 export interface ContainerProps {
@@ -33,8 +33,8 @@ const Header: React.FC = () => {
 
   return (
     <Container $isScrolled={isScrolled}>
-      <HeaderContainer id='header' isopen={isopen}>
-        <Logo href='#header'>
+      <HeaderContainer id="header" isopen={isopen}>
+        <Logo href="#header">
           <LogoIcon src={logo} alt="Logo" />
         </Logo>
         <Hero isopen={isopen} />

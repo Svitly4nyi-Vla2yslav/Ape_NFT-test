@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { BurgerMenuProps } from './BurgerMenu';
 
 export const ContainerMenu = styled.ul< {isopen: boolean} >`
   display: ${({ isopen }) => (isopen ? 'flex' : 'none')};
@@ -34,10 +35,12 @@ export const ButtonMenu = styled.button`
     align-items: center;
     border: none;
 
+
 `;
 
 export const TextButton = styled.p`
 // color: white;
+
 `
 
 export const ContainerNetworks = styled.div`
@@ -66,6 +69,14 @@ border-radius: 8px;
 padding: 1px;
 backdrop-filter: blur(12px);
 background: rgba(30, 30, 30, 0.3);
+
+&:active,
+&:hover,
+&:focus{
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
+  border: 1px solid lightgray;    
+  background: lightgray;
+}
 `;
 
 export const Link = styled.a`
@@ -85,6 +96,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
  
+&:active,
 &:hover,
 &:focus{
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 

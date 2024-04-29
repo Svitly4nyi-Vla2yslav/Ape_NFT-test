@@ -9,7 +9,9 @@ export const ContainerColection = styled.div`
 margin: 0px 72px;
 transition-duration: 300ms;
 }
-:where(.css-dev-only-do-not-override-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child, :where(.css-dev-only-do-not-override-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child .ant-collapse-header {
+:where(.css-dev-only-do-not-override-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child,
+ :where(.css-dev-only-do-not-override-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child,
+  .ant-collapse-header {
     border-radius: 12px;
 }
 
@@ -57,6 +59,11 @@ transition-duration: 300ms;
     background: #1e1e1e;  
 }
 margin-bottom: 60px;
+
+:where(.css-dev-only-do-not-override-1kuana8).ant-collapse>.ant-collapse-item >.ant-collapse-header {
+   
+    padding: 12px 10px;
+
 `;
 
 export const TitleList = styled.ul`
@@ -106,8 +113,8 @@ line-height: 1.16667;
 text-transform: uppercase;
 color: #fff;
 background: #1e1e1e;
-width: 216px;
-padding: 8px;
+width: 100%;
+padding: 8px 6px;
 padding-top: 10px
 border-radius: 12px;
 `;
@@ -118,7 +125,7 @@ font-weight: 400;
 font-size: 12px; 
 line-height: 1.66667;
 color: #dc3b5a;
-padding: 8px 8px 8px 0;
+padding: 8px 10px 8px 0;
 
 &:hover,
 &:active{
