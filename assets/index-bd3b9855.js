@@ -307,6 +307,14 @@ font-size: 44px;
 line-height: 1;
 letter-spacing: 0.01em;
 color: #1e1e1e;
+
+@media screen and (min-width: 768px){
+font-weight: 900;
+font-size: 92px;
+line-height: 100%;
+letter-spacing: 0.01em;
+color: #1e1e1e;
+}
 `,CP=Z.p`
 font-family: 'Right Grotesk';
 font-weight: 900;
@@ -317,6 +325,10 @@ color: #fff;
 width: 216px;
 height: 284px;
 
+@media screen and (min-width: 768px) {
+   width: 283px;
+   height: 386px;
+  }
 `,kP=Z.button`
 border-radius: 8px;
 padding: 10px 70px 12px 70px;
