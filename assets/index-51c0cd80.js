@@ -206,7 +206,31 @@ position: fixed;
   text-color: white;
   flex-direction: column;
   align-items: center;
-`,zu=$t.img`
+`,zu=$t.a`
+display: flex;
+font-size: 11px;
+width: 48px;
+height: 48px;
+cursor: pointer;
+border-radius: 12px;
+border: none;
+border-radius: 8px;
+padding: 1px;
+backdrop-filter: blur(12px);
+background: ${({isopen:e})=>e?"#ffffff":"rgba(30, 30, 30, 0.3)"};
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ 
+&:active,
+&:hover,
+&:focus{
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
+  border: 1px solid lightgray;    
+  background: lightgray;
+}
+`,Du=$t.img`
 width: 16px;
 backround-color: transparent;
 
@@ -257,37 +281,12 @@ background: rgba(30, 30, 30, 0.3);
   border: 1px solid lightgray;    
   background: lightgray;
 }
-`,Du=$t.a`
-display: flex;
-font-size: 11px;
-width: 48px;
-height: 48px;
-cursor: pointer;
-border-radius: 12px;
-border: none;
-border-radius: 8px;
-padding: 1px;
-backdrop-filter: blur(12px);
-background: rgba(30, 30, 30, 0.3);
-text-align: center;
-flex-direction: column;
-justify-content: center;
-align-items: center;
- 
-&:active,
-&:hover,
-&:focus{
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
-  border: 1px solid lightgray;    
-  background: lightgray;
-}
-
 `,mP=$t.div`
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-content: flex-end;
-`,gP="/assets/discord_logo-eac0030e.svg",vP="/assets/ship-30475caa.svg",yP="/assets/X-9219ad6d.svg",wP=({isopen:e,toggleMenu:t})=>_.jsxs(mP,{children:[_.jsx(hP,{onClick:t,children:_.jsxs(fP,{children:[" ",e?"CLOSE":"MENU"]})}),_.jsxs(dP,{isopen:e,children:[_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#about",target:"_self",children:"ABOUT"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#mind-map",target:"_self",children:"MIND-MAP"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#faq",target:"_self",children:"FAQ"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#arts",target:"_self",children:"ARTS"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#mint",target:"_self",children:"MINT"})," "]})})]}),_.jsxs(pP,{children:[_.jsx(Du,{href:"#",children:_.jsx(zu,{src:gP,alt:"📱"})}),_.jsx(Du,{href:"#",children:_.jsx(zu,{src:vP,alt:"🚢"})}),_.jsx(Du,{href:"#",children:_.jsx(zu,{src:yP,alt:"✖️"})})]})]}),bP="/assets/logo-ape-e61c68b8.svg",SP=Z.div`
+`,gP="/assets/discord_logo-eac0030e.svg",vP="/assets/ship-30475caa.svg",yP="/assets/X-9219ad6d.svg",wP=({isopen:e,toggleMenu:t})=>_.jsxs(mP,{children:[_.jsx(hP,{onClick:t,children:_.jsxs(fP,{children:[" ",e?"CLOSE":"MENU"]})}),_.jsxs(dP,{isopen:e,children:[_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#about",target:"_self",children:"ABOUT"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#mind-map",target:"_self",children:"MIND-MAP"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#faq",target:"_self",children:"FAQ"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#arts",target:"_self",children:"ARTS"})," "]})}),_.jsx(Bi,{children:_.jsxs(Fi,{children:[_.jsx("a",{href:"#mint",target:"_self",children:"MINT"})," "]})})]}),_.jsxs(pP,{children:[_.jsx(zu,{href:"#",isopen:e,children:_.jsx(Du,{src:gP,alt:"📱"})}),_.jsx(zu,{href:"#",isopen:e,children:_.jsx(Du,{src:vP,alt:"🚢"})}),_.jsx(zu,{href:"#",isopen:e,children:_.jsx(Du,{src:yP,alt:"✖️"})})]})]}),bP="/assets/logo-ape-e61c68b8.svg",SP=Z.div`
 display: ${({isopen:e})=>e?"none":"flex"};
     flex-direction: column;
     align-items: center;
