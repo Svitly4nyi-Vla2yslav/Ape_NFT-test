@@ -44,9 +44,9 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isopen, toggleMenu }) => {
         </ButtonMenu>
       </ContainerMenu>
       <ContainerNetworks>
-        <Link href='#'><Image src={discord} alt='📱' /></Link>
-        <Link href='#'><Image src={ship} alt='🚢'/></Link>
-        <Link href='#'><Image src={x} alt='✖️' /></Link>
+        <Link href='#' isopen={isopen}><Image src={discord} alt='📱' /></Link>
+        <Link href='#' isopen={isopen}><Image src={ship} alt='🚢'/></Link>
+        <Link href='#' isopen={isopen}><Image src={x} alt='✖️' /></Link>
       </ContainerNetworks>
     </Wrapper>
   );

@@ -16,6 +16,32 @@ export const ContainerMenu = styled.ul< {isopen: boolean} >`
   align-items: center;
 `;
 
+export const Link = styled.a< {isopen: boolean} >`
+display: flex;
+font-size: 11px;
+width: 48px;
+height: 48px;
+cursor: pointer;
+border-radius: 12px;
+border: none;
+border-radius: 8px;
+padding: 1px;
+backdrop-filter: blur(12px);
+background: ${({ isopen }) => (isopen ? "#ffffff" : "rgba(30, 30, 30, 0.3)")};
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ 
+&:active,
+&:hover,
+&:focus{
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
+  border: 1px solid lightgray;    
+  background: lightgray;
+}
+`;
+
 export const Image = styled.img`
 width: 16px;
 backround-color: transparent;
@@ -79,32 +105,7 @@ background: rgba(30, 30, 30, 0.3);
 }
 `;
 
-export const Link = styled.a`
-display: flex;
-font-size: 11px;
-width: 48px;
-height: 48px;
-cursor: pointer;
-border-radius: 12px;
-border: none;
-border-radius: 8px;
-padding: 1px;
-backdrop-filter: blur(12px);
-background: rgba(30, 30, 30, 0.3);
-text-align: center;
-flex-direction: column;
-justify-content: center;
-align-items: center;
- 
-&:active,
-&:hover,
-&:focus{
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
-  border: 1px solid lightgray;    
-  background: lightgray;
-}
 
-`;
 
 export const Wrapper = styled.div`
 display: flex;
