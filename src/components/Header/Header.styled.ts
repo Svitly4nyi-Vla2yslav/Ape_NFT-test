@@ -14,6 +14,10 @@ transition-duration: 300ms;
     border-radius: 12px;
     height: 542px;
 
+    @media screen and (min-width: 768px){
+        height: 421px;
+    }
+
 
 `;
 

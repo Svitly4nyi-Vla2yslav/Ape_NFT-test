@@ -7,6 +7,11 @@ display: ${({ isopen }) => (isopen ? 'none' : 'flex')};
     align-items: center;
     margin-top: 36px;
     margin-right: 8px
+
+    @media screen and (min-width: 768px){
+      margin-top: 54px;
+      margin-right: 16px
+    }
 `;
 
 export const TextBuroScript = styled.p`
@@ -15,6 +20,23 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.6875;
 color: #1e1e1e;
+
+
+
+@media screen and (min-width: 768px){
+
+  font-size: 20px;
+  bottom: -128px;
+  left: -247px;
+  position: relative;
+
+  span {
+    position: relative;
+    left: 65px;
+    bottom: -20px;
+  }
+}
+
 `;
 
 export const TextGroteskTitle = styled.h1`
@@ -28,11 +50,18 @@ letter-spacing: 0.01em;
 color: #1e1e1e;
 
 @media screen and (min-width: 768px){
-font-weight: 900;
-font-size: 92px;
-line-height: 100%;
-letter-spacing: 0.01em;
-color: #1e1e1e;
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: #1e1e1e;
+  display: flex;
+  margin-top: 81px;
+  justify-content: space-between;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  gap: 164px;
+  margin-left: 34px;
 }
 `;
 
@@ -49,8 +78,13 @@ width: 216px;
 height: 284px;
 
 @media screen and (min-width: 768px) {
+  position: absolute;
+  bottom: 337px;
+  // right: 249px;
    width: 283px;
    height: 386px;
+   margin-right: auto;
+   margin-left: auto;
   }
 `;
 

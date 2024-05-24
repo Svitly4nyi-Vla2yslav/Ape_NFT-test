@@ -10,11 +10,12 @@ import {
 } from './Hero.styled';
 import heroImage from '../../assets/image/heroImage.png';
 import { BurgerMenuProps } from '../BurgerMenu/BurgerMenu';
+
 const Hero: React.FC<BurgerMenuProps> = ({ isopen }) => {
   return (
     <HeroContainer  isopen={isopen ? true : false || undefined} >
-      <TextBuroScript>diD yOu seE iT ?</TextBuroScript>
-      <TextGroteskTitle>YACHT APES</TextGroteskTitle>
+      <TextBuroScript><span>diD yOu seE iT ?</span> </TextBuroScript>
+      <TextGroteskTitle><span>YACHT</span> <span>APES</span>  </TextGroteskTitle>
       <TextBuroScript>Apes aRe eveRywhere</TextBuroScript>
       <HeroImage src={heroImage} alt="Hero Apes" />
       <ButtonMeetApes><a href="#mind-map" target='_self'>
