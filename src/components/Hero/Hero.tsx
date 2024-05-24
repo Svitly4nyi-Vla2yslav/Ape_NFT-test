@@ -19,10 +19,10 @@ const Hero: React.FC<BurgerMenuProps> = ({ isopen }) => {
       <TextBuroScript>Apes aRe eveRywhere</TextBuroScript>
       <HeroImage src={heroImage} alt="Hero Apes" />
       <ButtonMeetApes><a href="#mind-map" target='_self'>
-        <TextGrotesk>MEET APES</TextGrotesk></a>
+        <TextGrotesk><span>MEET APES</span></TextGrotesk></a>
       </ButtonMeetApes>
       <TextMessina>
-        Yacht Ape is a collection of unique digital apes that you can own in NFT
+             Yacht Ape is a collection of unique digital apes that you can own in NFT
         format
       </TextMessina>
     </HeroContainer>

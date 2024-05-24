@@ -26,14 +26,14 @@ color: #1e1e1e;
 @media screen and (min-width: 768px){
 
   font-size: 20px;
-  bottom: -128px;
-  left: -247px;
+  bottom: -14px;
+  left: -180px;
   position: relative;
 
   span {
     position: relative;
-    left: 65px;
-    bottom: -20px;
+    left: -25px;
+    bottom: -53px;
   }
 }
 
@@ -71,6 +71,13 @@ font-weight: 900;
 font-size: 16px;
 line-height: 1.1875;
 color: #fff;
+
+@media screen and (min-width: 768px){
+  span{
+    color: #1e1e1e;
+  }
+  
+}
 `;
 
 export const HeroImage = styled.img`
@@ -96,6 +103,17 @@ height: 41px;
 backdrop-filter: blur(12px);
 background: rgba(30, 30, 30, 0.2);
 border: none;
+
+@media screen and (min-width: 768px){
+  border-radius: 12px;
+padding: 10px 61px 12px 61px;
+width: 190px;
+height: 41px;
+position: relative;
+        bottom: -65px;
+        left: 219px;
+
+}
 `;
 
 export const TextMessina = styled.p`
@@ -104,9 +122,19 @@ font-weight: 400;
 font-size: 12px;
 width: 216px;
 
-// line-height: 14px; 
 line-height: 1.16667;
 text-transform: uppercase;
 text-align: center;
 color: #1e1e1e;
+
+@media screen and (min-width: 768px){
+position: relative;
+line-height: 117%;
+text-transform: uppercase;
+text-align: justify;
+width: 190px;
+left: 221px;
+bottom: 43px;
+text-indent: 30%;
+}
 `;
