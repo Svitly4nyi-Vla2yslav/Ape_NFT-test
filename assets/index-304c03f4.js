@@ -308,8 +308,6 @@ font-size: 16px;
 line-height: 1.6875;
 color: #1e1e1e;
 
-
-
 @media screen and (min-width: 768px){
 
   font-size: 20px;
@@ -414,7 +412,7 @@ left: 221px;
 bottom: 43px;
 text-indent: 30%;
 }
-`,PP="/assets/heroImage-0dbeb922.png",OP=({isopen:e})=>$.jsxs(SP,{isopen:e?!0:void 0,children:[$.jsxs(Wg,{children:[$.jsx("span",{children:"diD yOu seE iT ?"})," "]}),$.jsxs(xP,{children:[$.jsx("span",{children:"YACHT"})," ",$.jsx("span",{children:"APES"}),"  "]}),$.jsx(Wg,{children:"Apes aRe eveRywhere"}),$.jsx(EP,{src:PP,alt:"Hero Apes"}),$.jsx(kP,{children:$.jsx("a",{href:"#mind-map",target:"_self",children:$.jsx(CP,{children:$.jsx("span",{children:"MEET APES"})})})}),$.jsx(TP,{children:"Yacht Ape is a collection of unique digital apes that you can own in NFT format"})]}),AP=()=>{const[e,t]=O.useState(!1),n=()=>{t(!e)},[r,o]=O.useState(!1);return O.useEffect(()=>{const i=()=>{window.scrollY>0?o(!0):o(!1)};return window.addEventListener("scroll",i),()=>{window.removeEventListener("scroll",i)}},[]),$.jsxs(lP,{$isScrolled:r,children:[$.jsxs(sP,{id:"header",isopen:e,children:[$.jsx(cP,{href:"#header",children:$.jsx(uP,{src:bP,alt:"Logo"})}),$.jsx(OP,{isopen:e}),$.jsx(wP,{isopen:e,toggleMenu:n})]})," "]})},IP=JT`
+`,PP="/assets/heroImage-0dbeb922.png",OP=({isopen:e})=>$.jsxs(SP,{isopen:e?!0:void 0,children:[$.jsxs(Wg,{children:[$.jsx("span",{children:"diD yOu seE iT ?"})," "]}),$.jsxs(xP,{children:[$.jsx("span",{children:"YACHT"})," ",$.jsx("span",{children:"APES"})," "]}),$.jsx(Wg,{children:"Apes aRe eveRywhere"}),$.jsx(EP,{src:PP,alt:"Hero Apes"}),$.jsx(kP,{children:$.jsx("a",{href:"#mind-map",target:"_self",children:$.jsx(CP,{children:$.jsx("span",{children:"MEET APES"})})})}),$.jsx(TP,{children:"Yacht Ape is a collection of unique digital apes that you can own in NFT format"})]}),AP=()=>{const[e,t]=O.useState(!1),n=()=>{t(!e)},[r,o]=O.useState(!1);return O.useEffect(()=>{const i=()=>{window.scrollY>0?o(!0):o(!1)};return window.addEventListener("scroll",i),()=>{window.removeEventListener("scroll",i)}},[]),$.jsxs(lP,{$isScrolled:r,children:[$.jsxs(sP,{id:"header",isopen:e,children:[$.jsx(cP,{href:"#header",children:$.jsx(uP,{src:bP,alt:"Logo"})}),$.jsx(OP,{isopen:e}),$.jsx(wP,{isopen:e,toggleMenu:n})]})," "]})},IP=JT`
   from {
     transform: translateX(1%);
   }
