@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BurgerMenuProps } from "../BurgerMenu/BurgerMenu";
 
-export const HeroContainer = styled.div<{isopen: boolean}>`
+export const HeroContainer = styled.div<{ isopen: boolean }>`
 display: ${({ isopen }) => (isopen ? 'none' : 'flex')};
     flex-direction: column;
     align-items: center;
@@ -20,8 +20,6 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.6875;
 color: #1e1e1e;
-
-
 
 @media screen and (min-width: 768px){
 

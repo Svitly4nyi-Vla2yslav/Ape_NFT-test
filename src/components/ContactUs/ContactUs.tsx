@@ -17,7 +17,7 @@ const ContactUs: React.FC = () => {
         Join the YACHT APE community to be one of the first to receive our
         limited edition NFT
       </ContactText>
-      <ContactForm/>
+      <ContactForm />
     </ContactContainer>
   );
 };

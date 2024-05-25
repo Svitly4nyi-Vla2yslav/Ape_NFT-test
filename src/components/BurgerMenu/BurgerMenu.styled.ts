@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { BurgerMenuProps } from './BurgerMenu';
 
-export const ContainerMenu = styled.ul< {isopen: boolean} >`
+export const ContainerMenu = styled.ul< { isopen: boolean } >`
   display: ${({ isopen }) => (isopen ? 'flex' : 'none')};
   position: absolute;
   top: 35%;
@@ -16,7 +16,7 @@ export const ContainerMenu = styled.ul< {isopen: boolean} >`
   align-items: center;
 `;
 
-export const Link = styled.a< {isopen: boolean} >`
+export const Link = styled.a< { isopen: boolean } >`
 display: flex;
 font-size: 11px;
 width: 48px;

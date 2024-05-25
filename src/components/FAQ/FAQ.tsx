@@ -88,19 +88,17 @@ const getItems: (
 ];
 
 const FAQ: React.FC = () => {
-
   const onChange = (key: string | string[]) => {
     console.log(key);
   };
 
   const panelStyle: React.CSSProperties = {
- 
     border: 'none',
-    borderRadius: "12px"
+    borderRadius: '12px',
   };
   return (
-    <ContainerColection style={{marginBottom: "60px"}}>
-      <Title id='faq'>FAQ</Title>
+    <ContainerColection style={{ marginBottom: '60px' }}>
+      <Title id="faq">FAQ</Title>
       <Collapse
         accordion
         ghost
