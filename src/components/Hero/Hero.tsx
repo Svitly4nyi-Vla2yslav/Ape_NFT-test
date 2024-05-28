@@ -8,7 +8,7 @@ import {
   TextGroteskTitle,
   TextMessina,
 } from './Hero.styled';
-import heroImage from '../../assets/image/heroImage.png';
+import heroImage from '../../assets/image/image-6-s-1aboutx2-6653a3fa6965d.webp';
 import { BurgerMenuProps } from '../BurgerMenu/BurgerMenu';
 
 const Hero: React.FC<BurgerMenuProps> = ({ isopen }) => {
