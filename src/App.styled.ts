@@ -41,7 +41,15 @@ const GlobalStyles = css`
   src: url(${Formular}) format('truetype');
 }
 
+@keyframes move {
+  from {
+    tranform: translateX(0%);
+  }
 
+  to {
+    transform: translateX(-100%);
+  }
+}
   
   body {
     font-family: 'Roboto', sans-serif;

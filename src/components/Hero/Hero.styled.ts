@@ -84,7 +84,7 @@ height: 284px;
 
 @media screen and (min-width: 768px) {
   position: absolute;
-  bottom: 337px;
+  bottom: 391px;
   // right: 249px;
    width: 283px;
    height: 386px;
