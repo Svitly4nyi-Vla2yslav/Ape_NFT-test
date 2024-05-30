@@ -1,13 +1,28 @@
 import styled from "styled-components";
 
+export const ImageCollapse = styled.img`
+position: absolute;
+width: 148px;
+height: 183px;
+transform: rotate(16deg);
+object-fit: cover;
+border-radius: 16px;
+
+`;
+
 export const ContainerColection = styled.div`
 :where(.css-dev-only-do-not-override-1kuana8).ant-collapse>.ant-collapse-item {
     border: none !important;
-    // width: 100%;
-   width: 65%;
 
+   max-width: 100%;
 margin: 0px 72px;
 transition-duration: 300ms;
+@media screen and (min-width: 768px){
+display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
 }
 :where(.css-dev-only-do-not-override-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child,
  :where(.css-dev-only-do-not-override-1kuana8).ant-collapse-borderless >.ant-collapse-item:last-child,
@@ -62,14 +77,16 @@ margin-bottom: 60px;
 
 :where(.css-dev-only-do-not-override-1kuana8).ant-collapse>.ant-collapse-item >.ant-collapse-header {
    
-    padding: 12px 10px;
-
+    padding: 12px 10px !important;
+}
 `;
 
 export const TitleList = styled.ul`
 width: 100%;
 display: flex;
+@media screen and (min-width: 768px){
 
+}
 
 `;
 
@@ -83,6 +100,9 @@ color: #fff;
 text-align: center;
 padding-top: 60px;
 padding-bottom: 24px;
+@media screen and (min-width: 768px){
+
+}
 `;
 
 export const TitleItem = styled.li`
@@ -101,6 +121,10 @@ width: 160px;
     background: #1e1e1e;
     border-radius: 12px;
 }
+
+@media screen and (min-width: 768px){
+
+}
 `;
 
 
@@ -117,6 +141,10 @@ width: 100%;
 padding: 8px 6px;
 padding-top: 10px
 border-radius: 12px;
+
+@media screen and (min-width: 768px){
+
+}
 `;
 
 export const NumberTitle = styled.span`
@@ -133,7 +161,11 @@ padding: 8px 10px 8px 0;
     // background: #1e1e1e;
 
 }
-`
+
+@media screen and (min-width: 768px){
+
+}
+`;
 
 
 
