@@ -14,14 +14,15 @@ import {
 } from './About.styled';
 import AboutImage from '../../assets/image/layer-5apv-1herox2-6653a3fa625a0.webp';
 import { useMediaQuery } from 'react-responsive';
-import text from "./text.json"
+import Banner from './Banner';
+
 
 const About: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 767px' });
 
   const Break = () => <br />;
 
-  const {slogans} = text;
+ 
 
   return (
     <>
@@ -45,20 +46,8 @@ const About: React.FC = () => {
         <ImageCard src={AboutImage} alt="Image NFT" />
       </AboutContainer>
       <BanerWraper>
-      <MarqueeContainer>
-        {slogans.map((slogan, index) => (
-          <MarqueeTextItem key={index}>
-            <MarqueeText>{slogan}</MarqueeText>
-          </MarqueeTextItem>
-        ))}
-      </MarqueeContainer>
-      <MarqueeContainer>
-        {slogans.map((slogan, index) => (
-          <MarqueeTextItem key={index}>
-            <MarqueeText>{slogan}</MarqueeText>
-          </MarqueeTextItem>
-        ))}
-      </MarqueeContainer>
+      <Banner/>
+      <Banner/>
       </BanerWraper>
     </>
   );
