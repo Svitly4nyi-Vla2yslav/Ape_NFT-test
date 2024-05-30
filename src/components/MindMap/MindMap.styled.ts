@@ -2,15 +2,30 @@ import styled from "styled-components";
 
 
 export const MindContainer = styled.div`
+margin: 80px auto auto auto;
 `
 
 export const SliderContainer = styled.div`
   width: 100%;
   overflow: hidden;
   display: flex;
-    align-items: center;
-    flex-direction: column;
+align-items: center;
+ flex-direction: column;
+
+    @media screen and (min-width: 768px){
+      overflow: visible;
+
 }
+`;
+
+export const TitleMapTablet = styled.h3`
+font-family: 'Right Grotesk';
+font-weight: 900;
+font-size: 80px;
+line-height: 100%;
+text-transform: uppercase;
+color: #fff;
+text-align: center;
 `;
 
 export const SliderWrapper = styled.div`
@@ -18,6 +33,15 @@ export const SliderWrapper = styled.div`
   transition: transform 0.5s ease;
   margin: 24px -187% 24px 10%;
 //   margin-left: 19%;
+@media screen and (min-width: 768px){
+  margin: 40px auto 24px auto;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
 
 `;
 
@@ -26,6 +50,11 @@ export const SlideCard = styled.div`
   max-width: 100%;
   padding: 0 10px;
   box-sizing: border-box;
+  @media screen and (min-width: 768px){
+flex: none;
+padding : 0;
+
+  }
   
 `;
 
@@ -44,6 +73,9 @@ export const SliderButton = styled.button`
   &:hover{
       color: #dc3b5a;
   }
+  @media screen and (min-width: 768px){
+display: none;
+  }
 
 `;
 
@@ -54,11 +86,14 @@ font-weight: 400;
 font-size: 24px;
 line-height: 1;
 color: #fff;
+@media screen and (min-width: 768px){
+
+}
 `;
 
 export const NextButton = styled(SliderButton)`
-  right: 10px;
-  font-family: "Biro Script Plus";
+right: 10px;
+font-family: "Biro Script Plus";
 font-weight: 400;
 font-size: 24px;
 line-height: 1;
@@ -78,11 +113,23 @@ flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: stretch;
-` 
+@media screen and (min-width: 768px){
+  width: 284px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+`;
 
 export const ButtonContainer = styled.div`
 display: flex;
 gap: 48px;
+
+@media screen and (min-width: 768px){
+
+}
 `;
 
 export const TextMessinaMap = styled.p`
@@ -92,6 +139,14 @@ font-size: 12px;
 line-height: 1.16667;
 text-transform: uppercase;
 color: #fff;
+
+@media screen and (min-width: 768px){
+width: 128px;
+display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+}
 `;
 
 export const TitleMap = styled.h3`
@@ -102,6 +157,14 @@ line-height: 1;
 text-transform: uppercase;
 color: #fff;
 padding-top: 78px;
+
+@media screen and (min-width: 768px){
+padding: 0;
+display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 77%;
+}
 `;
 
 export const IconArrow = styled.img`

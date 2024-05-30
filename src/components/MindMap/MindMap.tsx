@@ -6,12 +6,17 @@ import {
   MindContainer,
   TextMessinaMap,
   TitleMap,
+  TitleMapTablet,
 } from './MindMap.styled';
 import Arrow from '../../assets/icons/arrow.svg';
+import { useMediaQuery } from 'react-responsive';
 
 const MindMap: React.FC = () => {
+  const Break = () => <br />;
+  const isMobile = useMediaQuery({ query: '(max-width: 767px' });
   return (
     <MindContainer id="mind-map">
+      {isMobile || <TitleMapTablet>MIND MAP</TitleMapTablet>}
       <Slider>
         <CardItem>
           <TextMessinaMap>
@@ -40,7 +45,9 @@ const MindMap: React.FC = () => {
               <IconArrow src={Arrow} alt="↗️" />
             </a>
           </TextMessinaMap>
-          <TitleMap>Learn more in mind map</TitleMap>
+          <TitleMap>
+            Learn{isMobile || <Break />}more{isMobile || <Break />}in mind map
+          </TitleMap>
         </CardItem>
       </Slider>
     </MindContainer>
