@@ -35,6 +35,7 @@ import Image21 from '../../assets/image/9.png';
 const Arts: React.FC = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+  const isDekstop = useMediaQuery({ minWidth:1440})
 
   let slidesToShow = 4;
 
@@ -42,6 +43,8 @@ const Arts: React.FC = () => {
     slidesToShow = 1;
   } else if (isTablet) {
     slidesToShow = 2;
+  } else if (isDekstop) {
+    slidesToShow = 4;
   }
 
   const carouselRef = React.useRef<CarouselRef>(null);

@@ -4,10 +4,11 @@ export const ImageCollapse = styled.img`
 position: absolute;
 width: 148px;
 height: 183px;
-transform: rotate(16deg);
+transform: rotate(-16deg);
 object-fit: cover;
 border-radius: 16px;
-
+bottom: -20%;
+    left: -63%;
 `;
 
 export const ContainerColection = styled.div`
@@ -143,7 +144,10 @@ padding-top: 10px
 border-radius: 12px;
 
 @media screen and (min-width: 768px){
-
+    position: relative;
+    text-align: left;
+    margin-left: 38%;
+    width: 65%;
 }
 `;
 

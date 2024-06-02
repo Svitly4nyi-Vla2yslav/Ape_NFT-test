@@ -10,7 +10,10 @@ import {
   TitleItem,
   TitleList,
 } from './FAQ.styled';
-import ImageFirst from "../../assets/image/8.png"
+import ImageFirst from '../../assets/image/8.png';
+import ImageSecond from '../../assets/image/14.png';
+import ImageThird from '../../assets/image/16.png';
+import ImageFourth from '../../assets/image/11.png';
 import { useMediaQuery } from 'react-responsive';
 
 const FAQ: React.FC = () => {
@@ -39,11 +42,12 @@ const FAQ: React.FC = () => {
       ),
       children: (
         <>
-          {isMobile || <ImageCollapse src={ImageFirst} alt='manky' />}
           <ItemText>
-            An NFT collection is a group of unique digital assets, each represented
-            by a non-fungible token, typically created around a specific theme or
-            style.
+            {' '}
+            {isMobile || <ImageCollapse src={ImageFirst} alt="manky" />}
+            An NFT collection is a group of unique digital assets, each
+            represented by a non-fungible token, typically created around a
+            specific theme or style.
           </ItemText>
         </>
       ),
@@ -59,10 +63,13 @@ const FAQ: React.FC = () => {
         </TitleList>
       ),
       children: (
-        <ItemText>
-          To purchase nfts from a collection, you typically need to use
-          cryptocurrency on a blockchain-based marketplace.
-        </ItemText>
+        <>
+          <ItemText>
+            {isMobile || <ImageCollapse src={ImageSecond} alt="manky" />}
+            To purchase nfts from a collection, you typically need to use
+            cryptocurrency on a blockchain-based marketplace.
+          </ItemText>
+        </>
       ),
       showArrow: false,
       style: panelStyle,
@@ -78,6 +85,7 @@ const FAQ: React.FC = () => {
       ),
       children: (
         <ItemText>
+          {isMobile || <ImageCollapse src={ImageThird} alt="manky" />}
           To purchase nfts from a collection, you typically need to use
           cryptocurrency on a blockchain-based marketplace.
         </ItemText>
@@ -96,6 +104,7 @@ const FAQ: React.FC = () => {
       ),
       children: (
         <ItemText>
+          {isMobile || <ImageCollapse src={ImageFourth} alt="manky" />}
           As an NFT owner, you can own, transfer, potentially access exclusive
           content, resell, but don't automatically get copyright or intellectual
           property rights.
@@ -107,7 +116,7 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <ContainerColection style={{ marginBottom: '60px' }}>
+    <ContainerColection style={{ marginBottom: '60px', position: 'relative' }}>
       <Title id="faq">FAQ</Title>
       <Collapse
         accordion
@@ -115,7 +124,7 @@ const FAQ: React.FC = () => {
         defaultActiveKey={['1']}
         bordered={false}
         onChange={onChange}
-        items={getItems(panelStyle, isMobile)} 
+        items={getItems(panelStyle, isMobile)}
       />
     </ContainerColection>
   );

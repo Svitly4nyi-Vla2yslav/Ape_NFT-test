@@ -33,6 +33,19 @@ export const ArtsContainer = styled.div`
     box-shadow: 0 0px 0 rgba(0, 0, 0, 0.00);
 }
 margin-bottom: 60px;
+
+@media screen and (min-width: 768px){
+    :where(.css-dev-only-do-not-override-1kuana8).ant-carousel {
+        margin-right: 10%;
+    }
+    }
+@media screen and (min-width: 1024px){
+        :where(.css-dev-only-do-not-override-1kuana8).ant-carousel {
+           
+            margin-left: -14%;
+        }
+        }
+
 `;
 
 export const TitleText = styled.h3`
@@ -44,6 +57,10 @@ text-transform: uppercase;
 color: #fff;
 text-align: center;
 padding-bottom: 24px;
+
+@media screen and (min-width: 768px){
+
+}
 `;
 
 export const ButtonText = styled.p`
@@ -58,18 +75,29 @@ color: #fff;
 &:hover{
     color: #dc3b5a
 }
+
+@media screen and (min-width: 768px){
+
+}
 `;
 
 
 
 export const ImageItem = styled.div`
+@media screen and (min-width: 1024px){
 
+    }
 `;
 
 export const ImageCard = styled.img`
+
 border-radius: 12px;
 width: 216px;
 height: 256px;
+object-fit: cover;
+
+@media screen and (min-width: 1024px){
+}
 `;
 
 export const ButtonContainer = styled.div`
@@ -78,5 +106,10 @@ display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+ @media screen and (min-width: 768px){
+
+}
 
 `;
+
+
