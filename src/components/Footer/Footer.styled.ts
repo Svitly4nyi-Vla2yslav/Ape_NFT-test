@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
 width: 216px;
 margin: 44px auto 16px auto;
-
+@media screen and (min-width: 768px){
+width: 100%;
+}
 
 `;
 
