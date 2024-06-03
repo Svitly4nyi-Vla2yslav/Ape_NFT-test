@@ -13,15 +13,15 @@ const App = () => {
   return (
     <GlobalContainer>
       <Global styles={GlobalStyles} />
-      <Header/>
-      <About/>
-      <MindMap/>
-      <FAQ/>
-      <Arts/>
-      <ContactUs/>
-      <Footer/>
+      <Header />
+      <About />
+      <MindMap />
+      <FAQ />
+      <Arts />
+      <ContactUs />
+      <Footer />
     </GlobalContainer>
-  )
-}
+  );
+};
 
-export default App
+export default App;

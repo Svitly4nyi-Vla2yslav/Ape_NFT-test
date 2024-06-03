@@ -17,7 +17,9 @@ transition-duration: 300ms;
     @media screen and (min-width: 768px){
         height: 421px;
     }
-
+    @media screen and (min-width: 1244px){
+        height: 720px;
+    }
 
 `;
 
@@ -35,7 +37,10 @@ export const LogoIcon = styled.img`
 position: fixed;
     width: 48px;
     height: 32px;
-
+    @media screen and (min-width: 1244px){
+        width: 72px;
+        height: 50px;  
+    }
    
 `;
 
