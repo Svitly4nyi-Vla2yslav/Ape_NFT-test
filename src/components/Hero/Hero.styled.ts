@@ -35,6 +35,18 @@ color: #1e1e1e;
   }
 }
 
+@media screen and (min-width: 1244px){
+  font-size: 24px;
+line-height: 167%;
+}
+
+@media screen and (min-width: 1440px){
+  span {
+    position: relative;
+    left: -308px;
+  }
+  left: -213px;
+}
 `;
 
 export const TextGroteskTitle = styled.h1`
@@ -61,6 +73,11 @@ color: #1e1e1e;
   gap: 164px;
   margin-left: 34px;
 }
+@media screen and (min-width: 1244px){
+  font-size: 188px;
+  gap: 368px;
+  margin-left: 0px;
+}
 `;
 
 export const TextGrotesk = styled.p`
@@ -83,14 +100,21 @@ width: 216px;
 height: 284px;
 
 @media screen and (min-width: 768px) {
-  position: absolute;
-  bottom: 352px;
-  // right: 249px;
-   width: 283px;
-   height: 386px;
-   margin-right: auto;
-   margin-left: auto;
+position: absolute;
+bottom: 352px;
+width: 283px;
+height: 386px;
+margin-right: auto;
+ margin-left: auto;
   }
+  @media screen and (min-width: 1244px){
+width: 511px;
+height: 675px;
+bottom: 30%;
+  }
+@media screen and (min-width: 1440px){
+  bottom: 34.7%;
+}  
 `;
 
 export const ButtonMeetApes = styled.button`
