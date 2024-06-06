@@ -6,7 +6,6 @@ export const ContainerMenu = styled.ul< { isopen: boolean } >`
   position: absolute;
   top: 35%;
   left: 0;
-  // background-color: #f9f9f9;
   list-style: none;
   padding: 0;
   width: 100%;
@@ -40,6 +39,12 @@ align-items: center;
   border: 1px solid lightgray;    
   background: lightgray;
 }
+
+@media screen and (min-width: 1440px){
+  border-radius: 12px;
+width: 80px;
+height: 80px;
+}
 `;
 
 export const Image = styled.img`
@@ -60,7 +65,7 @@ export const ButtonMenu = styled.button`
     flex-direction: column;
     align-items: center;
     border: none;
-
+  
 
 `;
 
@@ -102,6 +107,11 @@ background: rgba(30, 30, 30, 0.3);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
   border: 1px solid lightgray;    
   background: lightgray;
+}
+
+@media screen and (min-width: 1440px){
+  width: 80px;
+height: 80px;
 }
 `;
 

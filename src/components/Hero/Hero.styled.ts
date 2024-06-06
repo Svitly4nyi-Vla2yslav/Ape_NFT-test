@@ -93,6 +93,14 @@ color: #fff;
   }
   
 }
+
+@media screen and (min-width: 1440px){
+  font-weight: 900;
+font-size: 28px;
+line-height: 121%;
+color: #1e1e1e;
+width: 100%;
+}
 `;
 
 export const HeroImage = styled.img`
@@ -113,7 +121,7 @@ height: 675px;
 bottom: 30%;
   }
 @media screen and (min-width: 1440px){
-  bottom: 34.7%;
+  top: 53px;
 }  
 `;
 
@@ -135,6 +143,13 @@ position: relative;
         bottom: -65px;
         left: 219px;
 
+}
+
+@media screen and (min-width: 1440px){
+width: 337px;
+height: 70px;
+left: 451px;
+top: 128px;
 }
 `;
 
@@ -158,5 +173,14 @@ width: 190px;
 left: 221px;
 bottom: 43px;
 text-indent: 30%;
+}
+
+@media screen and (min-width: 1440px){
+  font-size: 16px;
+  line-height: 119%;
+  text-transform: uppercase;
+  width: 337px;
+  left: 451px;
+bottom: 33px;
 }
 `;

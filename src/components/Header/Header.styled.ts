@@ -19,6 +19,7 @@ transition-duration: 300ms;
     }
     @media screen and (min-width: 1244px){
         height: 720px;
+      
     }
 
 `;
