@@ -193,6 +193,7 @@ transition-duration: 300ms;
     }
     @media screen and (min-width: 1244px){
         height: 720px;
+      
     }
 
 `,pP=$t.div`
@@ -215,7 +216,6 @@ position: fixed;
   position: absolute;
   top: 35%;
   left: 0;
-  // background-color: #f9f9f9;
   list-style: none;
   padding: 0;
   width: 100%;
@@ -247,6 +247,12 @@ align-items: center;
   border: 1px solid lightgray;    
   background: lightgray;
 }
+
+@media screen and (min-width: 1440px){
+  border-radius: 12px;
+width: 80px;
+height: 80px;
+}
 `,Fu=$t.img`
 width: 16px;
 backround-color: transparent;
@@ -263,7 +269,7 @@ backround-color: transparent;
     flex-direction: column;
     align-items: center;
     border: none;
-
+  
 
 `,vP=$t.p`
 // color: white;
@@ -297,6 +303,11 @@ background: rgba(30, 30, 30, 0.3);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
   border: 1px solid lightgray;    
   background: lightgray;
+}
+
+@media screen and (min-width: 1440px){
+  width: 80px;
+height: 80px;
 }
 `,bP=$t.div`
 display: flex;
@@ -389,6 +400,14 @@ color: #fff;
   }
   
 }
+
+@media screen and (min-width: 1440px){
+  font-weight: 900;
+font-size: 28px;
+line-height: 121%;
+color: #1e1e1e;
+width: 100%;
+}
 `,AP=Z.img`
 width: 216px;
 height: 284px;
@@ -407,7 +426,7 @@ height: 675px;
 bottom: 30%;
   }
 @media screen and (min-width: 1440px){
-  bottom: 34.7%;
+  top: 53px;
 }  
 `,IP=Z.button`
 border-radius: 8px;
@@ -427,6 +446,13 @@ position: relative;
         bottom: -65px;
         left: 219px;
 
+}
+
+@media screen and (min-width: 1440px){
+width: 337px;
+height: 70px;
+left: 451px;
+top: 128px;
 }
 `,$P=Z.p`
 font-family: 'Messina Sans Mono';
@@ -448,6 +474,15 @@ width: 190px;
 left: 221px;
 bottom: 43px;
 text-indent: 30%;
+}
+
+@media screen and (min-width: 1440px){
+  font-size: 16px;
+  line-height: 119%;
+  text-transform: uppercase;
+  width: 337px;
+  left: 451px;
+bottom: 33px;
 }
 `,_P="/assets/image-6-s-1aboutx2-6653a3fa6965d-30d87645.webp",MP=({isopen:e})=>I.jsxs(TP,{isopen:e?!0:void 0,children:[I.jsxs(Vg,{children:[I.jsx("span",{children:"diD yOu seE iT ?"})," "]}),I.jsxs(PP,{children:[I.jsx("span",{children:"YACHT"})," ",I.jsx("span",{children:"APES"})," "]}),I.jsx(Vg,{children:"Apes aRe eveRywhere"}),I.jsx(AP,{src:_P,alt:"Hero Apes"}),I.jsx(IP,{children:I.jsx("a",{href:"#mind-map",target:"_self",children:I.jsx(OP,{children:I.jsx("span",{children:"MEET APES"})})})}),I.jsx($P,{children:"Yacht Ape is a collection of unique digital apes that you can own in NFT format"})]}),LP=()=>{const[e,t]=O.useState(!1),n=()=>{t(!e)},[r,o]=O.useState(!1);return O.useEffect(()=>{const i=()=>{window.scrollY>0?o(!0):o(!1)};return window.addEventListener("scroll",i),()=>{window.removeEventListener("scroll",i)}},[]),I.jsxs(pP,{$isScrolled:r,children:[I.jsxs(fP,{id:"header",isopen:e,children:[I.jsx(hP,{href:"#header",children:I.jsx(mP,{src:kP,alt:"Logo"})}),I.jsx(MP,{isopen:e}),I.jsx(EP,{isopen:e,toggleMenu:n})]})," "]})},RP="/assets/cross-65826c0a.svg",jP=Z.div`
 max-width: 100%;
