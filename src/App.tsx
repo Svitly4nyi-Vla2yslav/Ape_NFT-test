@@ -8,6 +8,7 @@ import FAQ from './components/FAQ/FAQ';
 import Arts from './components/Arts/Arts';
 import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
+import BurgerMenuDekstop from './components/BurgerMenu/BurgerMenuDekstop';
 
 const App = () => {
   return (
@@ -18,8 +19,9 @@ const App = () => {
       <MindMap />
       <FAQ />
       <Arts />
-      <ContactUs />
+      <ContactUs /><BurgerMenuDekstop/>
       <Footer />
+      
     </GlobalContainer>
   );
 };
