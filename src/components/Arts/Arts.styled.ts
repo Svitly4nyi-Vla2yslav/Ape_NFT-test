@@ -19,7 +19,7 @@ export const ArtsContainer = styled.div`
     border-color: transparent;
     background: none;
 }
-
+ 
 :where(.css-1kuana8).ant-btn-default:not(:disabled):not(.ant-btn-disabled):active {
     color: #dc3b5a;
     border-color: transparent;

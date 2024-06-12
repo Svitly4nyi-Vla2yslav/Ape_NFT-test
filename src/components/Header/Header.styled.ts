@@ -19,6 +19,7 @@ transition-duration: 300ms;
     }
     @media screen and (min-width: 1244px){
         height: 720px;
+   background-color: #dc3b5a; 
       
     }
 
@@ -28,6 +29,9 @@ export const Container = styled.div<ContainerProps>`
 transition-duration: 150ms;
 background-color: ${({ $isScrolled }) =>
         $isScrolled ? "transparent" : "transparent"};
+
+@media screen and (min-width: 1244px){
+}
 `;
 
 export const Logo = styled.a`

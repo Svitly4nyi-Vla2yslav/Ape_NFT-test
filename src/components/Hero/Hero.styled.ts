@@ -12,6 +12,10 @@ display: ${({ isopen }) => (isopen ? 'none' : 'flex')};
       margin-top: 54px;
       margin-right: 16px
     }
+
+    @media screen and (min-width: 1244px){
+    display: flex;
+    }
 `;
 
 export const TextBuroScript = styled.p`
