@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 export const MindContainer = styled.div`
 margin: 80px auto auto auto;
+@media screen and (min-width: 1440px){
+
+}
 `
 
 export const SliderContainer = styled.div`
@@ -68,7 +71,6 @@ export const SliderButton = styled.button`
   font-size: 24px;
   z-index: 1;
 
-//   &:active,
   &:focus,
   &:hover{
       color: #dc3b5a;
@@ -121,6 +123,16 @@ flex-direction: row-reverse;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 1440px){
+border-radius: 24px;
+padding: 24px;
+width: 560px;
+height: 480px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+}
 `;
 
 export const ButtonContainer = styled.div`
@@ -147,6 +159,13 @@ display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
 }
+
+@media screen and (min-width: 1440px){
+font-weight: 400;
+font-size: 24px;
+line-height: 121%;
+width: 256px;
+}
 `;
 
 export const TitleMap = styled.h3`
@@ -165,9 +184,21 @@ display: flex;
     justify-content: flex-end;
     width: 77%;
 }
+
+@media screen and (min-width: 1440px){
+font-weight: 900;
+font-size: 64px;
+line-height: 100%;
+padding-right: 0%;
+        width: 512px;
+}
 `;
 
 export const IconArrow = styled.img`
 height: 24px;
 width: 24px;
+
+@media screen and (min-width: 1440px){
+
+}
 `;

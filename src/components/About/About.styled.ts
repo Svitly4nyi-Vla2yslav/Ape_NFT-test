@@ -20,7 +20,6 @@ align-items: start;
 @media screen and (min-width: 1440px){
 display: grid;
 max-width: 100%;
-min-height: 100%;
 justify-content: space-between;
 align-items: end;
 margin: 120px 136px 0 136px;
@@ -54,6 +53,11 @@ margin-bottom: 16px;
   height: 300px;
 }
   
+@media screen and (min-width: 1440px){
+font-weight: 900;
+font-size: 120px;
+line-height: 100%;
+width: 538px;
 }
 `;
 
@@ -114,6 +118,8 @@ line-height: 121%;
 text-transform: uppercase;
 text-align: right;
 width: 409px;
+        margin-bottom: 55%;
+        margin-left: -35%;
 }
 `;
 
@@ -138,6 +144,13 @@ margin-bottom: 36px;
 @media screen and (min-width: 1440px){
 margin-right: 0%;
 margin-bottom: 0px;
+font-weight: 400;
+font-size: 24px;
+line-height: 121%;
+text-transform: uppercase;
+text-align: center;
+width: 417px;
+margin-bottom: 82px;
 }
 `;
 
@@ -163,7 +176,7 @@ position: relative;
 width: 610px;
 height: 822px;
 margin-left: -305px;
-margin-top: 0px;
+margin-top: -169px;
 }
 `;
 
@@ -182,6 +195,10 @@ overflow: hidden;
 export const MarqueeContainer = styled.ul`
 display: flex;
  animation: move 20s linear infinite; 
+
+ @media screen and (min-width: 1440px) {
+ 
+ }
 `;
 
 export const MarqueeText = styled.p`
@@ -195,6 +212,10 @@ line-height: 36px;
 line-height: 1;
 text-transform: uppercase;
 color: #fff;
+
+ @media screen and (min-width: 1440px) {
+ 
+ }
 `;
 export const MarqueeTextItem = styled.li`
 position: relative;
@@ -216,9 +237,16 @@ padding-right: 84px;
     top: 19px;
     right: 36px;
   }
+     @media screen and (min-width: 1440px) {
+ top: 10px;
+ }
 }
 
 @media screen and (min-width: 1280px) {
   padding-right: 108px;
 }
+
+ @media screen and (min-width: 1440px) {
+ 
+ }
 `;

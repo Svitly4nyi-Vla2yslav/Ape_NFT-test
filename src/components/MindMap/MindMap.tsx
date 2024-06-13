@@ -14,6 +14,7 @@ import { useMediaQuery } from 'react-responsive';
 const MindMap: React.FC = () => {
   const Break = () => <br />;
   const isMobile = useMediaQuery({ query: '(max-width: 767px' });
+  const isDesktop = useMediaQuery({ query: '(min-width: 1439px)' });
   return (
     <MindContainer id="mind-map">
       {isMobile || <TitleMapTablet>MIND MAP</TitleMapTablet>}
