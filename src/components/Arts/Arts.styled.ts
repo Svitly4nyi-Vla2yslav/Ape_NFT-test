@@ -45,6 +45,15 @@ margin-bottom: 60px;
             margin-left: -14%;
         }
         }
+@media screen and (min-width: 1440px){
+        :where(.css-dev-only-do-not-override-1kuana8).ant-carousel {
+           
+            margin-left: -12%;
+        }
+
+        margin-top: 120px;
+        margin-bottom: 120px;
+        }
 
 `;
 
@@ -59,6 +68,12 @@ text-align: center;
 padding-bottom: 24px;
 
 @media screen and (min-width: 768px){
+font-size: 80px;
+}
+
+@media screen and (min-width: 1440px){
+font-size: 160px;
+padding-bottom: 80px;
 
 }
 `;
@@ -96,7 +111,10 @@ width: 216px;
 height: 256px;
 object-fit: cover;
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1440px){
+width: 274px;
+height: 320px;
+border-radius: 24px;
 }
 `;
 

@@ -7,6 +7,10 @@ margin: 44px auto 16px auto;
 width: 100%;
 }
 
+@media screen and (min-width: 1440px){
+margin-bottom: 24px;
+}
+
 `;
 
 export const FooterTitle = styled.h3`
@@ -18,4 +22,9 @@ line-height: 1.16667;
 text-transform: uppercase;
 text-align: center;
 color: #fff;
+
+@media screen and (min-width: 1440px){
+font-size: 16px;
+line-height: 119%;
+}
 `;

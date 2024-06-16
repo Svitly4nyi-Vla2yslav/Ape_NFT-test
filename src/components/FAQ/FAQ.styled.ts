@@ -123,6 +123,7 @@ line-height: 100%;
 @media screen and (min-width: 1440px){
 font-size: 160px;
 padding-bottom: 80px;
+padding-top: 120px;
 }
 `;
 

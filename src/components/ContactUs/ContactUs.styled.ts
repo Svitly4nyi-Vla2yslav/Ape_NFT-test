@@ -8,8 +8,11 @@ display: flex;
     margin : 0 auto;
 @media screen and (min-width: 768px){
     width: 397px;
-    margin: 0 185px;
+    // margin: 0 185px;
 }
+    @media screen and (min-width: 1440px){
+    margin: 0 auto;
+    }
 `;
 
 export const TitleContact = styled.h3`
@@ -23,8 +26,13 @@ text-align: center;
 @media screen and (min-width: 768px){
     font-size: 80px;
     line-height: 100%;
-    
 }
+
+ @media screen and (min-width: 1440px){
+ font-size: 160px;
+        width: 745px;
+        margin: 0 0;
+ }
 
 `;
 
@@ -42,6 +50,14 @@ margin: 16px 0;
 @media screen and (min-width: 768px){
 
 }
+
+ @media screen and (min-width: 1440px){
+ font-size: 24px;
+line-height: 121%;
+width: 581px;
+padding-bottom: 40px;
+// margin: 0 0;
+ }
 `;
 
 
@@ -59,6 +75,10 @@ margin: 16px 72px;
     max-width: 100%;
 }
 
+ @media screen and (min-width: 1440px){
+ margin-bottom: 120px;
+ }
+
 `;
 
 export const InputDiscord = styled.input`
@@ -71,6 +91,12 @@ color:  #fff;
 @media screen and (min-width: 768px){
 width: 200px;
 }
+
+ @media screen and (min-width: 1440px){
+ width: 333px;
+ border-radius: 0 12px 12px 0;
+ height: 64px;
+ }
 `;
 
 export const InputFox = styled.input`
@@ -83,6 +109,12 @@ color:  #fff;
 @media screen and (min-width: 768px){
     width: 200px;
 }
+
+ @media screen and (min-width: 1440px){
+ width: 333px;
+ border-radius: 0 12px 12px 0;
+ height: 64px;
+ }
 `;
 
 export const IconInput = styled.svg`
@@ -102,6 +134,13 @@ background: #dc3b5a;
     width: 248px;
     
 }
+
+ @media screen and (min-width: 1440px){
+ border-radius: 12px;
+padding: 16px 140px 20px 140px;
+width: 397px;
+height: 70px;
+ }
 `;
 
 export const ButtonTextContact = styled.p`
@@ -113,6 +152,11 @@ color: #fff;
 @media screen and (min-width: 768px){
 
 }
+
+ @media screen and (min-width: 1440px){
+ font-size: 28px;
+line-height: 121%;
+ }
 `;
 
 export const DiscordIcon = styled.img`
@@ -128,6 +172,11 @@ padding: 10px;
 
 }
 
+ @media screen and (min-width: 1440px){
+ height: 64px;
+ width: 64px;
+ }
+
 `;
 
 export const FoxIcon = styled.img`
@@ -142,6 +191,11 @@ padding: 10px;
 @media screen and (min-width: 768px){
 
 }
+
+ @media screen and (min-width: 1440px){
+ height: 64px;
+  width: 64px;
+ }
 `;
 
 export const ContainerIcon = styled.div`
@@ -152,4 +206,8 @@ width: auto;
 @media screen and (min-width: 768px){
 
 }
+
+ @media screen and (min-width: 1440px){
+ margin-bottom: 40px;
+ }
 `;
