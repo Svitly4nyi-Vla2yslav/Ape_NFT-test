@@ -138,6 +138,7 @@ backdrop-filter: blur(12px);
 background: rgba(30, 30, 30, 0.2);
 border: none;
 
+
 @media screen and (min-width: 768px){
   border-radius: 12px;
 padding: 10px 61px 12px 61px;
@@ -154,6 +155,14 @@ width: 337px;
 height: 70px;
 left: 451px;
 top: 128px;
+}
+
+&:active,
+&:hover,
+&:focus{
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.6); 
+  border: 1px solid lightgray;    
+  background: lightgray;
 }
 `;
 

@@ -55,7 +55,7 @@ const GlobalStyles = css`
     font-family: 'Roboto', sans-serif;
     background-color: black;
     color: #efedee;
- 
+  transition-duration: 300ms;
   }
 
   button {
@@ -112,31 +112,14 @@ const GlobalStyles = css`
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+   
     }
-
+ 
 `;
 
 export const GlobalContainer = styled.div`
 width: 100%;
-// padding: 0 15px; /* Загальні відступи для всіх розмірів екрану */
 
-// /* Респонсивні стилі */
-// @media screen and (min-width: 576px) {
-//   max-width: 540px; /* Ширина контейнера для пристроїв з екранами ширше 576px */
-//   margin: 0 auto; /* Центрування контейнера на більших екранах */
-// }
-
-// @media screen and (min-width: 768px) {
-//   max-width: 720px; /* Ширина контейнера для пристроїв з екранами ширше 768px */
-// }
-
-// @media screen and (min-width: 992px) {
-//   max-width: 960px; /* Ширина контейнера для пристроїв з екранами ширше 992px */
-// }
-
-// @media screen and (min-width: 1200px) {
-//   max-width: 1140px; /* Ширина контейнера для пристроїв з екранами ширше 1200px */
-// }
 `;
 
 export default GlobalStyles;
