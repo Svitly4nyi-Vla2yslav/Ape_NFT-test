@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import CrossIcon from "../../assets/image/cross.svg"
 
-
-
 export const AboutContainer = styled.div`
 max-width: 100%;
 max-height: 100%;
